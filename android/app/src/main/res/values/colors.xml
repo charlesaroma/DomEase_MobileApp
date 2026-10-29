@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- DomEase brand (docs/05-design-system.md) -->
+    <color name="ic_launcher_background">#874628</color>
+    <color name="splash_background">#461F0E</color>
+</resources>
