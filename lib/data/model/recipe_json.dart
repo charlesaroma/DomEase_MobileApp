@@ -11,6 +11,12 @@ Ingredient _ingredient(Json j) => Ingredient(
       substitute: j['substitute'] as String?,
     );
 
+RecipeImage? _image(Object? v) {
+  final j = v as Json?;
+  final url = j?['url'] as String?;
+  return url == null || url.isEmpty ? null : RecipeImage(url: url, alt: (j?['alt'] as String?) ?? '');
+}
+
 List<Ingredient> _ingredients(Object? v) => [for (final e in (v as List?) ?? const []) _ingredient(e as Json)];
 
 Recipe recipeFromJson(Json j) {
@@ -31,6 +37,11 @@ Recipe recipeFromJson(Json j) {
     healthyVariant: hv == null
         ? null
         : HealthyVariant(summary: (hv['summary'] as String?) ?? '', ingredients: _ingredients(hv['ingredients']), steps: strings(hv['steps'])),
+    photo: _image(j['photo']),
+    gallery: [for (final g in (j['gallery'] as List?) ?? const []) ?_image(g)],
+    isPremium: j['isPremium'] == true,
+    prepMinutes: toIntOrNull(j['prepMinutes']) ?? 0,
+    cookMinutes: toIntOrNull(j['cookMinutes']) ?? 0,
   );
 }
 
