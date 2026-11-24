@@ -51,7 +51,13 @@
     "dietary": [],
     "occasions": [],
     "vegForward": true,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 10,
+    "cookMinutes": 15,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_porridge",
@@ -101,7 +107,13 @@
     ],
     "occasions": [],
     "vegForward": true,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 10,
+    "cookMinutes": 15,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_rolex",
@@ -151,7 +163,13 @@
     "dietary": [],
     "occasions": [],
     "vegForward": false,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 10,
+    "cookMinutes": 15,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_oats",
@@ -201,7 +219,13 @@
     ],
     "occasions": [],
     "vegForward": true,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 10,
+    "cookMinutes": 15,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_cassava",
@@ -247,7 +271,13 @@
     "dietary": [],
     "occasions": [],
     "vegForward": true,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 10,
+    "cookMinutes": 15,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_luwombo",
@@ -302,7 +332,13 @@
       "birthday"
     ],
     "vegForward": false,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 20,
+    "cookMinutes": 45,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_beans_rice",
@@ -354,7 +390,13 @@
     "dietary": [],
     "occasions": [],
     "vegForward": true,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 20,
+    "cookMinutes": 45,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_gnut_stew",
@@ -410,7 +452,13 @@
     ],
     "occasions": [],
     "vegForward": true,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 20,
+    "cookMinutes": 45,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_fish",
@@ -460,7 +508,13 @@
     ],
     "occasions": [],
     "vegForward": false,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": true,
+    "prepMinutes": 20,
+    "cookMinutes": 45,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_pilau",
@@ -509,7 +563,13 @@
       "christmas"
     ],
     "vegForward": false,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 20,
+    "cookMinutes": 45,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_matoke_meat",
@@ -557,7 +617,13 @@
     "dietary": [],
     "occasions": [],
     "vegForward": false,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 20,
+    "cookMinutes": 50,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_gnut_dinner",
@@ -597,7 +663,13 @@
     "dietary": [],
     "occasions": [],
     "vegForward": true,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 20,
+    "cookMinutes": 50,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_veg_curry",
@@ -652,7 +724,13 @@
     ],
     "occasions": [],
     "vegForward": true,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 20,
+    "cookMinutes": 50,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_chicken_stew",
@@ -701,7 +779,13 @@
     ],
     "occasions": [],
     "vegForward": false,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 20,
+    "cookMinutes": 50,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_malakwang",
@@ -743,7 +827,13 @@
     "dietary": [],
     "occasions": [],
     "vegForward": true,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": true,
+    "prepMinutes": 20,
+    "cookMinutes": 50,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_gnuts_snack",
@@ -773,7 +863,13 @@
     "dietary": [],
     "occasions": [],
     "vegForward": true,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 5,
+    "cookMinutes": 15,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_fruit_cup",
@@ -811,7 +907,13 @@
     "dietary": [],
     "occasions": [],
     "vegForward": true,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 5,
+    "cookMinutes": 15,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_gonja",
@@ -840,7 +942,13 @@
     "dietary": [],
     "occasions": [],
     "vegForward": true,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 5,
+    "cookMinutes": 15,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_popcorn",
@@ -873,7 +981,13 @@
     "dietary": [],
     "occasions": [],
     "vegForward": true,
-    "status": "published"
+    "status": "published",
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 5,
+    "cookMinutes": 15,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_mandazi",
@@ -959,7 +1073,13 @@
         "Make the dough as usual with less sugar.",
         "Bake at 200 C for 15 minutes, turning once."
       ]
-    }
+    },
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 20,
+    "cookMinutes": 30,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_banana_bread",
@@ -1035,7 +1155,13 @@
         "Use very ripe bananas.",
         "Bake at 180 C for 45 minutes."
       ]
-    }
+    },
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 20,
+    "cookMinutes": 30,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_scones",
@@ -1106,7 +1232,13 @@
       "steps": [
         "Mix as usual and bake 14 minutes."
       ]
-    }
+    },
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 20,
+    "cookMinutes": 30,
+    "publishedAt": "2026-09-15T09:00:00Z"
   },
   {
     "id": "rec_doughnuts",
@@ -1176,6 +1308,12 @@
       "steps": [
         "Bake at 190 C for 12 minutes."
       ]
-    }
+    },
+    "photo": null,
+    "gallery": [],
+    "isPremium": false,
+    "prepMinutes": 20,
+    "cookMinutes": 30,
+    "publishedAt": "2026-09-15T09:00:00Z"
   }
 ]
