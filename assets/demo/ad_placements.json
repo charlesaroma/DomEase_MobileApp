@@ -1,0 +1,46 @@
+[
+  {
+    "id": "today",
+    "label": "Today",
+    "format": "banner",
+    "enabled": true,
+    "admobAndroid": "",
+    "admobIos": "",
+    "adsenseSlot": "",
+    "frequencyCapPerDay": null,
+    "note": "Below the progress cards"
+  },
+  {
+    "id": "meals",
+    "label": "Meals",
+    "format": "banner",
+    "enabled": true,
+    "admobAndroid": "",
+    "admobIos": "",
+    "adsenseSlot": "",
+    "frequencyCapPerDay": null,
+    "note": "Between the week and dietary support"
+  },
+  {
+    "id": "clean",
+    "label": "Clean",
+    "format": "banner",
+    "enabled": true,
+    "admobAndroid": "",
+    "admobIos": "",
+    "adsenseSlot": "",
+    "frequencyCapPerDay": null,
+    "note": "Under the zones"
+  },
+  {
+    "id": "shop",
+    "label": "Shop",
+    "format": "native",
+    "enabled": true,
+    "admobAndroid": "",
+    "admobIos": "",
+    "adsenseSlot": "",
+    "frequencyCapPerDay": null,
+    "note": "A sponsored product in the list. A live sponsored deal takes this slot first."
+  }
+]
