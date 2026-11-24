@@ -1,0 +1,101 @@
+[
+  {
+    "id": "houseHelp",
+    "title": "House Help",
+    "description": "Vetting questionnaire and guides",
+    "icon": "helper",
+    "sortOrder": 1,
+    "shown": true,
+    "comingSoon": false
+  },
+  {
+    "id": "sharing",
+    "title": "Household sharing",
+    "description": "Everyone at home on one plan, one list",
+    "icon": "users",
+    "sortOrder": 2,
+    "shown": true,
+    "comingSoon": false
+  },
+  {
+    "id": "allergies",
+    "title": "Allergy profiles",
+    "description": "For each person, with warnings on recipes",
+    "icon": "shield",
+    "sortOrder": 3,
+    "shown": true,
+    "comingSoon": false
+  },
+  {
+    "id": "occasions",
+    "title": "Occasion menus",
+    "description": "Birthday, Christmas, Easter and Eid",
+    "icon": "party",
+    "sortOrder": 4,
+    "shown": true,
+    "comingSoon": false
+  },
+  {
+    "id": "healthyPastry",
+    "title": "Healthier pastry swaps",
+    "description": "Lighter versions of the pastries you love",
+    "icon": "leaf",
+    "sortOrder": 5,
+    "shown": true,
+    "comingSoon": false
+  },
+  {
+    "id": "dietary",
+    "title": "Diabetic and PCOS ideas",
+    "description": "Meal ideas with the dietary disclaimer",
+    "icon": "heart",
+    "sortOrder": 6,
+    "shown": true,
+    "comingSoon": false
+  },
+  {
+    "id": "favourites",
+    "title": "Favourite meals",
+    "description": "Keep the dishes your home asks for",
+    "icon": "star",
+    "sortOrder": 7,
+    "shown": true,
+    "comingSoon": false
+  },
+  {
+    "id": "trends",
+    "title": "Eating trends",
+    "description": "What your home eats most, week by week",
+    "icon": "chart",
+    "sortOrder": 8,
+    "shown": true,
+    "comingSoon": true
+  },
+  {
+    "id": "budget",
+    "title": "Budget insights",
+    "description": "What the shopping costs, and where to save",
+    "icon": "wallet",
+    "sortOrder": 9,
+    "shown": true,
+    "comingSoon": true
+  },
+  {
+    "id": "autoPlan",
+    "title": "Automatic weekly planning",
+    "description": "Next week planned every Sunday",
+    "icon": "calendar",
+    "sortOrder": 10,
+    "shown": true,
+    "comingSoon": true
+  },
+  {
+    "id": "adFree",
+    "title": "No ads",
+    "description": "Every screen, ad free",
+    "icon": "ban",
+    "sortOrder": 11,
+    "shown": true,
+    "comingSoon": false
+  }
+]
