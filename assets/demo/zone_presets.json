@@ -1,0 +1,321 @@
+[
+  {
+    "id": "preset_compound",
+    "name": "Compound",
+    "sortOrder": 1,
+    "tasks": [
+      {
+        "id": "preset_compound_t1",
+        "label": "Sweep the compound",
+        "frequency": "daily"
+      },
+      {
+        "id": "preset_compound_t2",
+        "label": "Collect and burn or bag rubbish",
+        "frequency": "weekly"
+      },
+      {
+        "id": "preset_compound_t3",
+        "label": "Clear the drainage",
+        "frequency": "weekly"
+      },
+      {
+        "id": "preset_compound_t4",
+        "label": "Slash the grass",
+        "frequency": "monthly"
+      }
+    ],
+    "consumables": [
+      {
+        "id": "preset_compound_c1",
+        "name": "Rubbish sacks",
+        "replenishmentCycle": "monthly"
+      },
+      {
+        "id": "preset_compound_c2",
+        "name": "Hard broom",
+        "replenishmentCycle": "monthly"
+      }
+    ]
+  },
+  {
+    "id": "preset_laundry",
+    "name": "Laundry",
+    "sortOrder": 2,
+    "tasks": [
+      {
+        "id": "preset_laundry_t1",
+        "label": "Wash the clothes",
+        "frequency": "weekly"
+      },
+      {
+        "id": "preset_laundry_t2",
+        "label": "Iron and fold",
+        "frequency": "weekly"
+      },
+      {
+        "id": "preset_laundry_t3",
+        "label": "Wash the bedding",
+        "frequency": "weekly"
+      }
+    ],
+    "consumables": [
+      {
+        "id": "preset_laundry_c1",
+        "name": "Washing powder",
+        "replenishmentCycle": "monthly"
+      },
+      {
+        "id": "preset_laundry_c2",
+        "name": "Bar soap",
+        "replenishmentCycle": "monthly"
+      }
+    ]
+  },
+  {
+    "id": "preset_veranda",
+    "name": "Veranda",
+    "sortOrder": 3,
+    "tasks": [
+      {
+        "id": "preset_veranda_t1",
+        "label": "Sweep the veranda",
+        "frequency": "daily"
+      },
+      {
+        "id": "preset_veranda_t2",
+        "label": "Mop the floor",
+        "frequency": "weekly"
+      },
+      {
+        "id": "preset_veranda_t3",
+        "label": "Wipe the chairs and table",
+        "frequency": "weekly"
+      }
+    ],
+    "consumables": []
+  },
+  {
+    "id": "preset_dining_room",
+    "name": "Dining room",
+    "sortOrder": 4,
+    "tasks": [
+      {
+        "id": "preset_dining_room_t1",
+        "label": "Wipe the table after meals",
+        "frequency": "daily"
+      },
+      {
+        "id": "preset_dining_room_t2",
+        "label": "Mop the floor",
+        "frequency": "weekly"
+      },
+      {
+        "id": "preset_dining_room_t3",
+        "label": "Dust the cupboards",
+        "frequency": "weekly"
+      }
+    ],
+    "consumables": []
+  },
+  {
+    "id": "preset_childrens_room",
+    "name": "Children's room",
+    "sortOrder": 5,
+    "tasks": [
+      {
+        "id": "preset_childrens_room_t1",
+        "label": "Make the beds",
+        "frequency": "daily"
+      },
+      {
+        "id": "preset_childrens_room_t2",
+        "label": "Pack away toys and books",
+        "frequency": "daily"
+      },
+      {
+        "id": "preset_childrens_room_t3",
+        "label": "Change the bedding",
+        "frequency": "weekly"
+      }
+    ],
+    "consumables": []
+  },
+  {
+    "id": "preset_store",
+    "name": "Store",
+    "sortOrder": 6,
+    "tasks": [
+      {
+        "id": "preset_store_t1",
+        "label": "Tidy the shelves",
+        "frequency": "weekly"
+      },
+      {
+        "id": "preset_store_t2",
+        "label": "Check for pests",
+        "frequency": "monthly"
+      },
+      {
+        "id": "preset_store_t3",
+        "label": "Throw out what has expired",
+        "frequency": "monthly"
+      }
+    ],
+    "consumables": []
+  },
+  {
+    "id": "preset_garden",
+    "name": "Garden",
+    "sortOrder": 7,
+    "tasks": [
+      {
+        "id": "preset_garden_t1",
+        "label": "Water the plants",
+        "frequency": "daily"
+      },
+      {
+        "id": "preset_garden_t2",
+        "label": "Weed the beds",
+        "frequency": "weekly"
+      },
+      {
+        "id": "preset_garden_t3",
+        "label": "Trim the hedge",
+        "frequency": "monthly"
+      }
+    ],
+    "consumables": []
+  },
+  {
+    "id": "preset_animals",
+    "name": "Animals",
+    "sortOrder": 8,
+    "tasks": [
+      {
+        "id": "preset_animals_t1",
+        "label": "Feed and give water",
+        "frequency": "daily"
+      },
+      {
+        "id": "preset_animals_t2",
+        "label": "Clean the shelter",
+        "frequency": "weekly"
+      }
+    ],
+    "consumables": [
+      {
+        "id": "preset_animals_c1",
+        "name": "Animal feed",
+        "replenishmentCycle": "weekly"
+      }
+    ]
+  },
+  {
+    "id": "preset_car",
+    "name": "Car",
+    "sortOrder": 9,
+    "tasks": [
+      {
+        "id": "preset_car_t1",
+        "label": "Wash the outside",
+        "frequency": "weekly"
+      },
+      {
+        "id": "preset_car_t2",
+        "label": "Clean the inside",
+        "frequency": "monthly"
+      }
+    ],
+    "consumables": []
+  },
+  {
+    "id": "preset_kitchen",
+    "name": "Kitchen",
+    "sortOrder": 10,
+    "tasks": [
+      {
+        "id": "preset_kitchen_t1",
+        "label": "Wash the dishes",
+        "frequency": "daily"
+      },
+      {
+        "id": "preset_kitchen_t2",
+        "label": "Wipe the counters",
+        "frequency": "daily"
+      },
+      {
+        "id": "preset_kitchen_t3",
+        "label": "Clean the stove",
+        "frequency": "weekly"
+      }
+    ],
+    "consumables": [
+      {
+        "id": "preset_kitchen_c1",
+        "name": "Dish soap",
+        "replenishmentCycle": "monthly"
+      }
+    ]
+  },
+  {
+    "id": "preset_bathroom_and_toilet",
+    "name": "Bathroom and toilet",
+    "sortOrder": 11,
+    "tasks": [
+      {
+        "id": "preset_bathroom_and_toilet_t1",
+        "label": "Clean the toilet",
+        "frequency": "daily"
+      },
+      {
+        "id": "preset_bathroom_and_toilet_t2",
+        "label": "Scrub the shower",
+        "frequency": "weekly"
+      }
+    ],
+    "consumables": [
+      {
+        "id": "preset_bathroom_and_toilet_c1",
+        "name": "Toilet paper",
+        "replenishmentCycle": "weekly"
+      }
+    ]
+  },
+  {
+    "id": "preset_bedrooms",
+    "name": "Bedrooms",
+    "sortOrder": 12,
+    "tasks": [
+      {
+        "id": "preset_bedrooms_t1",
+        "label": "Make the beds",
+        "frequency": "daily"
+      },
+      {
+        "id": "preset_bedrooms_t2",
+        "label": "Change the bedding",
+        "frequency": "weekly"
+      }
+    ],
+    "consumables": []
+  },
+  {
+    "id": "preset_living_room",
+    "name": "Living room",
+    "sortOrder": 13,
+    "tasks": [
+      {
+        "id": "preset_living_room_t1",
+        "label": "Tidy and dust",
+        "frequency": "daily"
+      },
+      {
+        "id": "preset_living_room_t2",
+        "label": "Mop the floor",
+        "frequency": "weekly"
+      }
+    ],
+    "consumables": []
+  }
+]
