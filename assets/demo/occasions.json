@@ -1,0 +1,30 @@
+[
+  {
+    "id": "birthday",
+    "name": "Birthday",
+    "icon": "cake",
+    "active": true,
+    "sortOrder": 1
+  },
+  {
+    "id": "christmas",
+    "name": "Christmas",
+    "icon": "tree",
+    "active": true,
+    "sortOrder": 2
+  },
+  {
+    "id": "easter",
+    "name": "Easter",
+    "icon": "egg",
+    "active": true,
+    "sortOrder": 3
+  },
+  {
+    "id": "eid",
+    "name": "Eid",
+    "icon": "moon",
+    "active": true,
+    "sortOrder": 4
+  }
+]
