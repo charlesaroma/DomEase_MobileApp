@@ -7,6 +7,7 @@ import 'package:domease/domain/models/content.dart';
 import 'package:domease/domain/models/currency.dart';
 import 'package:domease/domain/models/legal.dart';
 import 'package:domease/domain/models/shopping.dart';
+import 'package:domease/domain/models/zone_presets.dart';
 
 final nudgesProvider = FutureProvider<List<Nudge>>((ref) => ref.watch(contentRepositoryProvider).nudges());
 
@@ -25,3 +26,12 @@ final nudgeOfTheDayProvider = FutureProvider<Nudge?>((ref) async {
   final day = DateTime.now().difference(DateTime(2026)).inDays;
   return nudges[day % nudges.length];
 });
+
+// Set in the admin's App content; each falls back to the app's own copy.
+final faqsProvider = FutureProvider<List<Faq>>((ref) => ref.watch(contentRepositoryProvider).faqs());
+
+final premiumFeaturesProvider = FutureProvider<List<PremiumFeatureInfo>>((ref) => ref.watch(contentRepositoryProvider).premiumFeatures());
+
+final occasionsProvider = FutureProvider<List<Occasion>>((ref) => ref.watch(contentRepositoryProvider).occasions());
+
+final zonePresetsProvider = FutureProvider<List<ZonePreset>>((ref) => ref.watch(contentRepositoryProvider).zonePresets());

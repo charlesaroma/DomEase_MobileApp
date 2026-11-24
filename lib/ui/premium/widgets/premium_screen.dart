@@ -8,6 +8,7 @@ import 'package:go_router/go_router.dart';
 
 import 'package:domease/config/environment.dart';
 import 'package:domease/domain/models/failure.dart';
+import 'package:domease/domain/models/content_fallbacks.dart';
 import 'package:domease/domain/models/premium.dart';
 import 'package:domease/routing/routes.dart';
 import 'package:domease/ui/core/themes/tokens.dart';
@@ -80,13 +81,13 @@ class _PremiumScreenState extends ConsumerState<PremiumScreen> {
             const SizedBox(height: AppSpace.sm),
             Text('Everything free stays free. Premium adds the personal and the automatic.', style: AppText.lead.copyWith(color: AppColors.clay200)),
             const SizedBox(height: AppSpace.xxl),
-            for (final f in PremiumFeature.values)
+            for (final f in ref.watch(premiumFeaturesProvider).value ?? fallbackPremiumFeatures)
               Padding(
                 padding: const EdgeInsets.only(bottom: AppSpace.md),
                 child: Row(children: [
                   const Icon(Icons.check_circle, color: AppColors.sage400, size: 22),
                   const SizedBox(width: AppSpace.md),
-                  Expanded(child: Text(f.label, style: AppText.body.copyWith(color: AppColors.white))),
+                  Expanded(child: Text(f.comingSoon ? '${f.title} (coming soon)' : f.title, style: AppText.body.copyWith(color: AppColors.white))),
                 ]),
               ),
             const SizedBox(height: AppSpace.xl),

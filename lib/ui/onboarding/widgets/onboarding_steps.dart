@@ -3,9 +3,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import 'package:domease/domain/models/premium.dart';
+import 'package:domease/domain/models/content_fallbacks.dart';
 import 'package:domease/ui/core/themes/tokens.dart';
 import 'package:domease/ui/core/themes/typography.dart';
+import 'package:domease/ui/core/view_models/content_viewmodel.dart';
 import 'package:domease/ui/core/ui/household_choices.dart';
 import 'package:domease/ui/core/ui/option_tile.dart';
 import 'package:domease/ui/onboarding/view_models/onboarding_viewmodel.dart';
@@ -62,13 +63,13 @@ class StepBody extends ConsumerWidget {
           ],
         OnboardingStep.premium => [
             const StepHeading(premiumHeading, lead: 'Everything you need to run the house is free. Premium adds the personal and the automatic.'),
-            for (final f in PremiumFeature.values.take(6))
+            for (final f in (ref.watch(premiumFeaturesProvider).value ?? fallbackPremiumFeatures).take(6))
               Padding(
                 padding: const EdgeInsets.only(bottom: AppSpace.md),
                 child: Row(children: [
                   Icon(Icons.check_circle, color: Theme.of(context).colorScheme.secondary, size: 22),
                   const SizedBox(width: AppSpace.md),
-                  Expanded(child: Text(f.label, style: AppText.body.copyWith(color: Theme.of(context).colorScheme.onSurface))),
+                  Expanded(child: Text(f.comingSoon ? '${f.title} (coming soon)' : f.title, style: AppText.body.copyWith(color: Theme.of(context).colorScheme.onSurface))),
                 ]),
               ),
             const SizedBox(height: AppSpace.sm),

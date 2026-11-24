@@ -35,6 +35,14 @@ class HealthyVariant {
   final List<String> steps;
 }
 
+/// A photo of the dish, uploaded in the admin and served from storage.
+class RecipeImage {
+  const RecipeImage({required this.url, this.alt = ''});
+
+  final String url;
+  final String alt;
+}
+
 class Recipe {
   const Recipe({
     required this.id,
@@ -50,6 +58,11 @@ class Recipe {
     this.occasions = const [],
     this.vegForward = false,
     this.healthyVariant,
+    this.photo,
+    this.gallery = const [],
+    this.isPremium = false,
+    this.prepMinutes = 0,
+    this.cookMinutes = 0,
   });
 
   final String id;
@@ -69,6 +82,17 @@ class Recipe {
   final List<String> occasions;
   final bool vegForward;
   final HealthyVariant? healthyVariant;
+
+  /// The cover photo; null shows the meal type's tinted placeholder.
+  final RecipeImage? photo;
+  final List<RecipeImage> gallery;
+
+  /// Locked for free households and never planned for them (set in the admin).
+  final bool isPremium;
+  final int prepMinutes;
+  final int cookMinutes;
+
+  int get totalMinutes => prepMinutes + cookMinutes;
 
   /// True when an ingredient matches any of [allergies] (FR-MP-11).
   bool contains(Set<String> allergies) =>

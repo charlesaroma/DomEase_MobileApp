@@ -4,6 +4,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:domease/config/dependencies.dart';
 import 'package:domease/domain/models/zone.dart';
 import 'package:domease/domain/models/zone_presets.dart';
+import 'package:domease/ui/core/view_models/content_viewmodel.dart';
 
 final zonesProvider = AsyncNotifierProvider<ZonesNotifier, List<Zone>>(ZonesNotifier.new);
 
@@ -97,5 +98,6 @@ class ZonesNotifier extends AsyncNotifier<List<Zone>> {
 /// Presets not already in the household, by name.
 final zoneSuggestionsProvider = Provider<List<ZonePreset>>((ref) {
   final names = {for (final z in ref.watch(zonesProvider).value ?? const <Zone>[]) z.name.toLowerCase()};
-  return [for (final p in zonePresets) if (!names.contains(p.name.toLowerCase())) p];
+  final presets = ref.watch(zonePresetsProvider).value ?? zonePresets;
+  return [for (final p in presets) if (!names.contains(p.name.toLowerCase())) p];
 });

@@ -12,6 +12,7 @@ import 'package:domease/ui/core/themes/typography.dart';
 import 'package:domease/ui/core/ui/async_view.dart';
 import 'package:domease/ui/core/ui/premium_lock.dart';
 import 'package:domease/ui/core/ui/readable_width.dart';
+import 'package:domease/ui/core/ui/recipe_photo.dart';
 import 'package:domease/ui/core/ui/section_label.dart';
 import 'package:domease/ui/core/ui/status_pill.dart';
 import 'package:domease/ui/core/view_models/content_viewmodel.dart';
@@ -62,12 +63,16 @@ class _Body extends ConsumerWidget {
     return ListView(
       padding: const EdgeInsets.fromLTRB(AppSpace.screen, 0, AppSpace.screen, AppSpace.huge),
       children: [
+        RecipePhoto(recipe: r, radius: AppRadii.cardAll, iconSize: 56),
+        const SizedBox(height: AppSpace.xl),
         Text(r.mealType.label.toUpperCase(), style: AppText.eyebrow.copyWith(color: scheme.primary)),
         const SizedBox(height: AppSpace.sm),
         Text(r.name, style: AppText.display.copyWith(color: scheme.onSurface, fontSize: 34)),
         const SizedBox(height: AppSpace.md),
         Wrap(spacing: AppSpace.sm, runSpacing: AppSpace.sm, children: [
           StatusPill(label: r.cuisine, icon: Icons.public),
+          if (r.totalMinutes > 0) StatusPill(label: '${r.totalMinutes} min', icon: Icons.schedule),
+          if (r.isPremium) const StatusPill(label: 'Premium', icon: Icons.workspace_premium_outlined),
           for (final a in r.ageGroups) StatusPill(label: a.label, icon: Icons.people_outline),
           for (final b in r.benefits) StatusPill(label: b, icon: Icons.spa_outlined, tone: PillTone.good),
         ]),
@@ -80,9 +85,16 @@ class _Body extends ConsumerWidget {
           _Note(icon: Icons.info_outline, text: disclaimer),
         ],
         SectionLabel('Ingredients for $people', trailing: Text('Serves ${r.servings} as written', style: Theme.of(context).textTheme.bodySmall)),
-        _Ingredients(items: scaleIngredients(r.ingredients, from: r.servings, to: people)),
-        const SectionLabel('Method'),
-        _Steps(steps: r.steps),
+        PremiumLock(
+          locked: r.isPremium && !premium,
+          title: 'This recipe comes with Premium',
+          body: 'See every ingredient and step, sized to your home.',
+          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            _Ingredients(items: scaleIngredients(r.ingredients, from: r.servings, to: people)),
+            const SectionLabel('Method'),
+            _Steps(steps: r.steps),
+          ]),
+        ),
         if (r.healthyVariant != null) ...[
           const SectionLabel('Healthier version'),
           PremiumLock(

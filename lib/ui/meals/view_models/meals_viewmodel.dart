@@ -34,7 +34,7 @@ class MealPlanNotifier extends AsyncNotifier<MealPlan> {
     final pool = await ref.read(recipesProvider.future);
     final household = ref.read(householdProvider).value;
     final allergies = household != null && household.isPremium ? household.allergies : <String>{};
-    return MealPlan({for (final t in MealType.values) t: planWeek(pool, t, seed: seed + t.index, allergies: allergies)});
+    return MealPlan({for (final t in MealType.values) t: planWeek(pool, t, seed: seed + t.index, allergies: allergies, premium: household?.isPremium ?? false)});
   }
 
   /// "Swap this week's plan" for one meal type (FR-MP-6).
@@ -44,7 +44,7 @@ class MealPlanNotifier extends AsyncNotifier<MealPlan> {
     final pool = await ref.read(recipesProvider.future);
     final household = ref.read(householdProvider).value;
     final allergies = household != null && household.isPremium ? household.allergies : <String>{};
-    final next = current.withType(type, planWeek(pool, type, seed: DateTime.now().millisecondsSinceEpoch, allergies: allergies));
+    final next = current.withType(type, planWeek(pool, type, seed: DateTime.now().millisecondsSinceEpoch, allergies: allergies, premium: household?.isPremium ?? false));
     state = AsyncData(next);
     await ref.read(mealRepositoryProvider).savePlan(next);
   }

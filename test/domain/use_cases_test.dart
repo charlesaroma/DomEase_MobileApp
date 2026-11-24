@@ -59,6 +59,15 @@ void main() {
     test('the same seed gives the same week', () {
       expect(planWeek(pool, MealType.dinner, seed: 9), planWeek(pool, MealType.dinner, seed: 9));
     });
+
+    test('Premium recipes go to Premium homes only', () {
+      final withPremium = [
+        ...pool,
+        const Recipe(id: 'p', name: 'p', mealType: MealType.dinner, cuisine: 'Ugandan', servings: 4, ingredients: [], steps: ['Cook.'], isPremium: true),
+      ];
+      expect(planWeek(withPremium, MealType.dinner, seed: 1).toSet(), {'a', 'b'});
+      expect(planWeek(withPremium, MealType.dinner, seed: 1, premium: true).toSet(), {'a', 'b', 'p'});
+    });
   });
 
   group('buildShoppingList', () {

@@ -3,11 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
+import 'package:domease/domain/models/content_fallbacks.dart';
 import 'package:domease/domain/models/recipe.dart';
 import 'package:domease/routing/routes.dart';
 import 'package:domease/ui/core/themes/tokens.dart';
 import 'package:domease/ui/core/themes/typography.dart';
 import 'package:domease/ui/core/ui/premium_lock.dart';
+import 'package:domease/ui/core/ui/recipe_photo.dart';
 import 'package:domease/ui/core/view_models/content_viewmodel.dart';
 import 'package:domease/ui/core/view_models/household_viewmodel.dart';
 import 'package:domease/ui/meals/view_models/meals_viewmodel.dart';
@@ -46,12 +48,16 @@ class DayMealCard extends StatelessWidget {
               ]),
             ),
             const SizedBox(width: AppSpace.md),
+            if (r != null) ...[
+              SizedBox(width: 64, child: RecipePhoto(recipe: r, aspectRatio: 1, radius: BorderRadius.circular(AppRadii.tile), iconSize: 26)),
+              const SizedBox(width: AppSpace.md),
+            ],
             Expanded(
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 Text(r?.name ?? 'Nothing planned', style: AppText.subheading.copyWith(color: scheme.onSurface)),
                 if (r != null)
                   Text(
-                    [r.cuisine, r.ageGroups.map((a) => a.label).join(', ')].where((s) => s.isNotEmpty).join(' · '),
+                    [r.cuisine, if (r.totalMinutes > 0) '${r.totalMinutes} min', r.ageGroups.map((a) => a.label).join(', ')].where((s) => s.isNotEmpty).join(' · '),
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
               ]),
@@ -115,7 +121,7 @@ class OccasionsCard extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final scheme = Theme.of(context).colorScheme;
     final recipes = ref.watch(recipesProvider).value ?? const <Recipe>[];
-    const occasions = {'birthday': 'Birthday', 'christmas': 'Christmas', 'easter': 'Easter', 'eid': 'Eid'};
+    final occasions = ref.watch(occasionsProvider).value ?? fallbackOccasions;
     return PremiumLock(
       locked: !ref.watch(isPremiumProvider),
       title: 'Special occasion menus',
@@ -125,12 +131,12 @@ class OccasionsCard extends ConsumerWidget {
           child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Text('Special occasions', style: AppText.subheading.copyWith(color: scheme.onSurface)),
             const SizedBox(height: AppSpace.sm),
-            for (final e in occasions.entries)
+            for (final o in occasions)
               ListTile(
                 contentPadding: EdgeInsets.zero,
                 leading: Icon(Icons.celebration_outlined, color: scheme.primary),
-                title: Text(e.value),
-                subtitle: Text(recipes.where((r) => r.occasions.contains(e.key)).map((r) => r.name).join(', ')),
+                title: Text(o.name),
+                subtitle: Text(recipes.where((r) => r.occasions.contains(o.id)).map((r) => r.name).join(', ')),
               ),
           ]),
         ),

@@ -7,13 +7,13 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:in_app_review/in_app_review.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'package:domease/domain/models/content_fallbacks.dart';
 import 'package:domease/ui/core/themes/tokens.dart';
 import 'package:domease/ui/core/themes/typography.dart';
 import 'package:domease/ui/core/ui/readable_width.dart';
 import 'package:domease/ui/core/ui/settings_group.dart';
 import 'package:domease/ui/core/view_models/app_info_viewmodel.dart';
 import 'package:domease/ui/core/view_models/content_viewmodel.dart';
-import 'package:domease/ui/help/widgets/help_faqs.dart';
 import 'package:domease/ui/help/widgets/report_sheet.dart';
 
 class HelpScreen extends ConsumerWidget {
@@ -50,16 +50,16 @@ class HelpScreen extends ConsumerWidget {
           padding: const EdgeInsets.fromLTRB(AppSpace.screen, 0, AppSpace.screen, AppSpace.huge),
           children: [
             SettingsGroup(title: 'Common questions', children: [
-              for (final (q, a) in helpFaqs)
+              for (final f in ref.watch(faqsProvider).value ?? fallbackFaqs)
                 Theme(
                   // No extra lines from the expansion tile inside the card.
                   data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
                   child: ExpansionTile(
                     leading: Icon(Icons.help_outline, color: scheme.primary),
-                    title: Text(q, style: AppText.body.copyWith(color: scheme.onSurface, fontWeight: FontWeight.w500)),
+                    title: Text(f.question, style: AppText.body.copyWith(color: scheme.onSurface, fontWeight: FontWeight.w500)),
                     childrenPadding: const EdgeInsets.fromLTRB(56, 0, AppSpace.lg, AppSpace.lg),
                     expandedCrossAxisAlignment: CrossAxisAlignment.start,
-                    children: [Text(a, style: AppText.body.copyWith(color: scheme.onSurface))],
+                    children: [Text(f.answer, style: AppText.body.copyWith(color: scheme.onSurface))],
                   ),
                 ),
             ]),
