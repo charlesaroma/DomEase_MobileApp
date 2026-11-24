@@ -4,15 +4,15 @@
     "yearlyPrice": null,
     "currency": "UGX"
   },
-  "ads": {
-    "today": true,
-    "meals": true,
-    "clean": true,
-    "shop": true
-  },
   "freeTier": {
     "zoneLimit": null
   },
   "dietaryDisclaimer": "This is general guidance, not medical advice. Speak to a doctor or dietitian about your own needs.",
-  "supportEmail": "hello@domease.app"
+  "supportEmail": "hello@domease.app",
+  "trialDays": 0,
+  "minAppVersion": "1.0.0",
+  "maintenance": {
+    "on": false,
+    "message": "DomEase is having a quick check up. Back in a few minutes."
+  }
 }
