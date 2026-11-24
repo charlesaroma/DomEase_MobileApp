@@ -1,0 +1,43 @@
+[
+  {
+    "id": "spon_001",
+    "brand": "Mukwano",
+    "product": "Roki cooking oil, 1 litre",
+    "headline": "Cooking oil for the week",
+    "image": null,
+    "link": "https://example.com/roki",
+    "screens": [
+      "shop"
+    ],
+    "matchItems": [
+      "cooking oil"
+    ],
+    "startsAt": "2026-11-01T00:00:00Z",
+    "endsAt": "2026-12-31T23:59:00Z",
+    "active": true,
+    "views": 1840,
+    "taps": 61,
+    "createdAt": "2026-10-28T09:00:00Z"
+  },
+  {
+    "id": "spon_002",
+    "brand": "Movit",
+    "product": "Bar soap, 800 g",
+    "headline": "Running low on soap?",
+    "image": null,
+    "link": "https://example.com/movit",
+    "screens": [
+      "shop",
+      "clean"
+    ],
+    "matchItems": [
+      "bar soap"
+    ],
+    "startsAt": "2026-12-01T00:00:00Z",
+    "endsAt": "2026-12-24T23:59:00Z",
+    "active": true,
+    "views": 0,
+    "taps": 0,
+    "createdAt": "2026-11-20T09:00:00Z"
+  }
+]
