@@ -1,0 +1,143 @@
+[
+  {
+    "id": "zone_kitchen",
+    "name": "Kitchen",
+    "sortOrder": 1,
+    "tasks": [
+      {
+        "id": "zone_kitchen_t1",
+        "label": "Wash the dishes",
+        "frequency": "daily"
+      },
+      {
+        "id": "zone_kitchen_t2",
+        "label": "Wipe the counters",
+        "frequency": "daily"
+      },
+      {
+        "id": "zone_kitchen_t3",
+        "label": "Clean the stove",
+        "frequency": "weekly"
+      },
+      {
+        "id": "zone_kitchen_t4",
+        "label": "Defrost the fridge",
+        "frequency": "monthly"
+      }
+    ],
+    "consumables": [
+      {
+        "id": "zone_kitchen_c1",
+        "name": "Dish soap",
+        "replenishmentCycle": "monthly"
+      },
+      {
+        "id": "zone_kitchen_c2",
+        "name": "Charcoal",
+        "replenishmentCycle": "monthly"
+      },
+      {
+        "id": "zone_kitchen_c3",
+        "name": "Bin bags",
+        "replenishmentCycle": "monthly"
+      }
+    ]
+  },
+  {
+    "id": "zone_bathroom",
+    "name": "Bathroom and toilet",
+    "sortOrder": 2,
+    "tasks": [
+      {
+        "id": "zone_bathroom_t1",
+        "label": "Clean the toilet",
+        "frequency": "daily"
+      },
+      {
+        "id": "zone_bathroom_t2",
+        "label": "Scrub the shower",
+        "frequency": "weekly"
+      },
+      {
+        "id": "zone_bathroom_t3",
+        "label": "Wash the bath mats",
+        "frequency": "weekly"
+      }
+    ],
+    "consumables": [
+      {
+        "id": "zone_bathroom_c1",
+        "name": "Toilet paper",
+        "replenishmentCycle": "weekly"
+      },
+      {
+        "id": "zone_bathroom_c2",
+        "name": "Soap",
+        "replenishmentCycle": "monthly"
+      },
+      {
+        "id": "zone_bathroom_c3",
+        "name": "Floor cleaner",
+        "replenishmentCycle": "monthly"
+      }
+    ]
+  },
+  {
+    "id": "zone_bedrooms",
+    "name": "Bedrooms",
+    "sortOrder": 3,
+    "tasks": [
+      {
+        "id": "zone_bedrooms_t1",
+        "label": "Make the beds",
+        "frequency": "daily"
+      },
+      {
+        "id": "zone_bedrooms_t2",
+        "label": "Change the bedding",
+        "frequency": "weekly"
+      },
+      {
+        "id": "zone_bedrooms_t3",
+        "label": "Sweep under the beds",
+        "frequency": "weekly"
+      }
+    ],
+    "consumables": [
+      {
+        "id": "zone_bedrooms_c1",
+        "name": "Washing powder",
+        "replenishmentCycle": "monthly"
+      }
+    ]
+  },
+  {
+    "id": "zone_living",
+    "name": "Living room",
+    "sortOrder": 4,
+    "tasks": [
+      {
+        "id": "zone_living_t1",
+        "label": "Sweep and mop",
+        "frequency": "daily"
+      },
+      {
+        "id": "zone_living_t2",
+        "label": "Dust the shelves",
+        "frequency": "weekly"
+      },
+      {
+        "id": "zone_living_t3",
+        "label": "Beat the cushions",
+        "frequency": "monthly"
+      }
+    ],
+    "consumables": [
+      {
+        "id": "zone_living_c1",
+        "name": "Air freshener",
+        "replenishmentCycle": "monthly"
+      }
+    ]
+  }
+]

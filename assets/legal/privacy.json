@@ -1,0 +1,87 @@
+{
+  "id": "privacy",
+  "title": "Privacy Policy",
+  "updated": "2026-10-30",
+  "summary": "We collect what DomEase needs to plan your home: your sign in details, your household answers and what you do in the app. We do not sell your data. Allergy and dietary details get extra care. You can see, correct or delete your data at any time, and you can complain to Uganda's Personal Data Protection Office.",
+  "sections": [
+    {
+      "heading": "Who is responsible for your data",
+      "paragraphs": [
+        "DomEase, operated from Kampala, Uganda, decides how your personal data is used and is responsible for it. We follow the Data Protection and Privacy Act, 2019 of Uganda and its Regulations. You can reach us about privacy at hello@domease.app."
+      ]
+    },
+    {
+      "heading": "What we collect",
+      "paragraphs": [
+        "Account details: your name, and your email address or phone number, and how you sign in. If you use Google or Apple, we receive your name and email from them, never your password.",
+        "Household details: who lives in your home, how many people eat at home, your currency, goals, the meals you want help with and dietary preferences. With Premium, the names, age groups and allergies of household members you choose to add.",
+        "What you do in the app: your meal plans, cleaning zones and tasks, shopping list, favourites, recipe suggestions and messages you send us.",
+        "Device and usage information: app version, device type, crash reports and, on the free plan, advertising identifiers used by Google AdMob.",
+        "Payment records: when you pay for Premium, the mobile money provider tells us the plan, amount, date and whether payment succeeded. We never see or store your mobile money PIN."
+      ]
+    },
+    {
+      "heading": "Why we use it",
+      "paragraphs": [
+        "To provide the Service: plan meals sized to your household, run the cleaning rota, build the shopping list and convert currency.",
+        "To keep your account secure and to let people you invite share your home.",
+        "To take payment for Premium and keep the records the law requires.",
+        "To answer your messages and improve DomEase, for example by fixing problems you report.",
+        "To show adverts on the free plan.",
+        "We rely on your consent, on the need to provide the Service you asked for, and on our legal duties. Where we rely on consent you can withdraw it at any time."
+      ]
+    },
+    {
+      "heading": "Allergy and health details",
+      "paragraphs": [
+        "Allergies and dietary needs such as diabetic or PCOS friendly meals can reveal health information, so we treat them as sensitive. We use them only to filter and label suggestions for your home, only with your consent, we keep access to them limited and logged, and you can remove them at any time."
+      ]
+    },
+    {
+      "heading": "Who we share it with",
+      "paragraphs": [
+        "We do not sell your personal data.",
+        "We share it only with service providers who help us run DomEase and who must protect it: our cloud hosting and database providers, our SMS provider for sign in codes, the mobile money payment aggregator, Google and Apple for sign in, and Google AdMob for adverts on the free plan.",
+        "We may also share data when the law requires it, or to protect the safety of a person."
+      ]
+    },
+    {
+      "heading": "Data stored outside Uganda",
+      "paragraphs": [
+        "Some of our providers store data on servers outside Uganda. When that happens we make sure the data is protected to a standard at least as high as Uganda's law requires."
+      ]
+    },
+    {
+      "heading": "How long we keep it",
+      "paragraphs": [
+        "We keep your data while your account is open. When you delete your account we delete your personal data within 30 days, except payment records, which we keep for as long as tax and accounting law requires, and backups, which are overwritten within 90 days."
+      ]
+    },
+    {
+      "heading": "Your rights",
+      "paragraphs": [
+        "You can ask to see the personal data we hold about you, to correct it, to delete it, to stop or limit how we use it, and to withdraw consent. Much of this you can do yourself in the app under You.",
+        "To use any of these rights, contact hello@domease.app. We will reply within 30 days.",
+        "If you are unhappy with how we handle your data, you can complain to the Personal Data Protection Office of Uganda."
+      ]
+    },
+    {
+      "heading": "Keeping it safe",
+      "paragraphs": [
+        "We protect your data with encryption in transit, access controls and regular reviews. No system is perfectly secure, so if we learn of a breach that puts you at risk we will tell you and the Personal Data Protection Office as the law requires."
+      ]
+    },
+    {
+      "heading": "Children",
+      "paragraphs": [
+        "DomEase is for adults. Household members you add may include children; add only what is needed, such as a first name, age group and allergies, and only as their parent or guardian. We do not knowingly create accounts for anyone under 18."
+      ]
+    },
+    {
+      "heading": "Changes to this policy",
+      "paragraphs": [
+        "We will tell you in the app before any important change takes effect. The date at the top shows when this policy last changed."
+      ]
+    }
+  ]
+}

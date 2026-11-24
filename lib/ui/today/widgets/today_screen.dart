@@ -1,102 +1,87 @@
 // ─── Today ────────────────────────────────────────────────────────
-// What the household opens on. For now: the brand in place (app bar logo,
-// the Tonight card, the week's progress, the tab bar) so every screen built
-// next starts from the same parts. Data arrives with the data layer.
+// What the household opens on (FR-TD-1 to FR-TD-7).
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 
+import 'package:domease/routing/routes.dart';
+import 'package:domease/ui/auth/view_models/auth_viewmodel.dart';
 import 'package:domease/ui/core/themes/tokens.dart';
 import 'package:domease/ui/core/themes/typography.dart';
+import 'package:domease/ui/core/ui/ad_slot.dart';
+import 'package:domease/ui/core/ui/async_view.dart';
 import 'package:domease/ui/core/ui/brand/domease_logo.dart';
+import 'package:domease/ui/core/ui/progress_row.dart';
+import 'package:domease/ui/core/ui/readable_width.dart';
+import 'package:domease/ui/core/ui/section_label.dart';
+import 'package:domease/ui/core/ui/settings_group.dart';
+import 'package:domease/ui/core/view_models/household_viewmodel.dart';
+import 'package:domease/ui/today/view_models/today_viewmodel.dart';
+import 'package:domease/ui/today/widgets/today_parts.dart';
+import 'package:domease/utils/dates.dart';
 
-class TodayScreen extends StatelessWidget {
+class TodayScreen extends ConsumerWidget {
   const TodayScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final scheme = Theme.of(context).colorScheme;
     final dark = Theme.of(context).brightness == Brightness.dark;
+    final household = ref.watch(householdProvider).value;
+    final today = ref.watch(todayProvider);
+
     return Scaffold(
       appBar: AppBar(
         titleSpacing: AppSpace.screen,
-        title: DomEaseLogo(
-          layout: LogoLayout.horizontalNoTagline,
-          tone: dark ? LogoTone.reversed : LogoTone.primary,
-          height: 34,
-        ),
+        title: DomEaseLogo(layout: LogoLayout.horizontalNoTagline, tone: dark ? LogoTone.reversed : LogoTone.primary, height: 32),
+        actions: [
+          if (household != null) HouseholdChip(household: household, onTap: () => context.push(Routes.household)),
+          const SizedBox(width: AppSpace.sm),
+          // You: profile, settings, help and legal.
+          IconButton(
+            tooltip: 'You and settings',
+            onPressed: () => context.push(Routes.you),
+            icon: InitialsAvatar(ref.watch(sessionProvider).value?.initials ?? '?', radius: 17),
+          ),
+          const SizedBox(width: AppSpace.sm),
+        ],
       ),
-      body: ListView(
-        padding: const EdgeInsets.all(AppSpace.screen),
-        children: [
-          Text('Today', style: AppText.display.copyWith(color: scheme.onSurface)),
-          const SizedBox(height: AppSpace.xs),
-          Text('Your week at a glance', style: Theme.of(context).textTheme.bodySmall),
-          const SizedBox(height: AppSpace.xxl),
-          Card(
-            clipBehavior: Clip.antiAlias,
-            child: Container(
-              decoration: BoxDecoration(border: Border(left: BorderSide(color: scheme.primary, width: 3))),
-              padding: const EdgeInsets.all(AppSpace.lg),
-              child: Column(
+      body: ReadableWidth(child: RefreshIndicator(
+        onRefresh: () => ref.refresh(todayProvider.future),
+        child: ListView(
+          padding: const EdgeInsets.fromLTRB(AppSpace.screen, AppSpace.sm, AppSpace.screen, AppSpace.huge),
+          children: [
+            Text('Today', style: AppText.display.copyWith(color: scheme.onSurface)),
+            Text(longDate(DateTime.now()), style: Theme.of(context).textTheme.bodySmall),
+            const NudgeBanner(),
+            AsyncView(
+              value: today,
+              onRetry: () => ref.invalidate(todayProvider),
+              data: (t) => Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('TONIGHT', style: AppText.eyebrow.copyWith(color: scheme.primary)),
-                  const SizedBox(height: AppSpace.sm),
-                  Text('Groundnut stew', style: AppText.heading.copyWith(color: scheme.onSurface)),
-                  Text('with posho and sukuma', style: Theme.of(context).textTheme.bodySmall),
+                  const SizedBox(height: AppSpace.lg),
+                  TonightCard(recipe: t.tonight),
+                  const SectionLabel('This week'),
+                  ProgressRow(label: 'Meals planned', done: t.mealsPlanned, of: t.mealsTotal),
+                  ProgressRow(label: 'Zones cleared', done: t.zonesClear, of: t.zones),
+                  ProgressRow(label: 'List bought', done: t.itemsBought, of: t.itemsTotal),
+                  if (t.dueToday.isNotEmpty) ...[
+                    SectionLabel('Due today', trailing: Text('${t.dueToday.length}', style: AppText.money.copyWith(fontSize: 13))),
+                    DueToday(items: t.dueToday.take(4).toList()),
+                  ],
+                  const SizedBox(height: AppSpace.lg),
+                  ListSnapshot(total: t.listTotal, low: t.lowCount, currency: household?.currency ?? 'UGX'),
                 ],
               ),
             ),
-          ),
-          const SizedBox(height: AppSpace.lg),
-          FilledButton(onPressed: () {}, child: const Text('Plan the week')),
-          const SizedBox(height: AppSpace.xxl),
-          Text('THIS WEEK', style: AppText.eyebrow.copyWith(color: Theme.of(context).textTheme.bodySmall?.color)),
-          const SizedBox(height: AppSpace.md),
-          const _Progress(label: 'Meals planned', done: 10, of: 12),
-          const _Progress(label: 'Zones cleared', done: 2, of: 5),
-          const _Progress(label: 'List bought', done: 14, of: 19),
-        ],
-      ),
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: 0,
-        destinations: const [
-          NavigationDestination(icon: Icon(Icons.wb_sunny_outlined), label: 'Today'),
-          NavigationDestination(icon: Icon(Icons.ramen_dining_outlined), label: 'Meals'),
-          NavigationDestination(icon: Icon(Icons.auto_awesome_outlined), label: 'Clean'),
-          NavigationDestination(icon: Icon(Icons.shopping_basket_outlined), label: 'Shop'),
-        ],
-      ),
-    );
-  }
-}
-
-class _Progress extends StatelessWidget {
-  const _Progress({required this.label, required this.done, required this.of});
-
-  final String label;
-  final int done;
-  final int of;
-
-  @override
-  Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-    return Padding(
-      padding: const EdgeInsets.only(bottom: AppSpace.md),
-      child: Column(
-        children: [
-          Row(
-            children: [
-              Expanded(child: Text(label, style: AppText.label.copyWith(color: scheme.onSurface))),
-              Text('$done of $of', style: AppText.money.copyWith(fontSize: 13, color: scheme.onSurface)),
-            ],
-          ),
-          const SizedBox(height: AppSpace.xs),
-          ClipRRect(
-            borderRadius: AppRadii.pillAll,
-            child: LinearProgressIndicator(value: done / of, minHeight: 6),
-          ),
-        ],
-      ),
+            const SectionLabel('Tools'),
+            const ToolsRow(),
+            const AdSlot(screen: 'today'),
+            const PremiumUpsell(),
+          ],
+        ),
+      )),
     );
   }
 }

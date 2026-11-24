@@ -1,0 +1,42 @@
+[
+  {
+    "id": "nudge_1",
+    "text": "Had a glass of water since lunch? Keep a jug on the table.",
+    "active": true
+  },
+  {
+    "id": "nudge_2",
+    "text": "Half the plate in vegetables tonight: sukuma, dodo or cabbage all count.",
+    "active": true
+  },
+  {
+    "id": "nudge_3",
+    "text": "A ten minute walk after dinner helps everyone sleep.",
+    "active": true
+  },
+  {
+    "id": "nudge_4",
+    "text": "Swap one fried snack this week for roasted groundnuts.",
+    "active": true
+  },
+  {
+    "id": "nudge_5",
+    "text": "Fruit for the school snack box: mango, banana or pineapple.",
+    "active": true
+  },
+  {
+    "id": "nudge_6",
+    "text": "Beans twice this week: cheap, filling and full of fibre.",
+    "active": true
+  },
+  {
+    "id": "nudge_7",
+    "text": "Stretch for five minutes before the morning rush.",
+    "active": true
+  },
+  {
+    "id": "nudge_8",
+    "text": "Brown posho or millet keeps you full for longer.",
+    "active": true
+  }
+]

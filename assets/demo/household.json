@@ -1,0 +1,40 @@
+{
+  "id": "hh_demo",
+  "name": "Our home",
+  "type": "family",
+  "size": 4,
+  "currency": "UGX",
+  "tier": "free",
+  "members": [
+    {
+      "id": "m1",
+      "name": "You",
+      "role": "owner",
+      "ageGroup": "adults",
+      "allergies": []
+    },
+    {
+      "id": "m2",
+      "name": "Joy",
+      "role": "member",
+      "ageGroup": "adults",
+      "allergies": []
+    },
+    {
+      "id": "m3",
+      "name": "Tendo",
+      "role": "member",
+      "ageGroup": "kids",
+      "allergies": [
+        "Groundnuts"
+      ]
+    },
+    {
+      "id": "m4",
+      "name": "Grace",
+      "role": "house_help",
+      "ageGroup": "adults",
+      "allergies": []
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "sug_1",
+    "name": "Kikomando",
+    "suggestedMealType": "lunch",
+    "ingredientsRaw": "Chapati, beans, onion, tomato",
+    "methodRaw": "Chop the chapati, fry with beans and onion.",
+    "submittedBy": "Brian Mugisha",
+    "status": "pending",
+    "createdAt": "2026-10-29T02:00:00Z"
+  },
+  {
+    "id": "sug_2",
+    "name": "Pumpkin porridge",
+    "suggestedMealType": "breakfast",
+    "ingredientsRaw": "Pumpkin, millet flour, milk",
+    "methodRaw": "Boil and mash pumpkin, stir into millet porridge.",
+    "submittedBy": "Grace Atim",
+    "status": "pending",
+    "createdAt": "2026-10-28T19:00:00Z"
+  },
+  {
+    "id": "sug_3",
+    "name": "Smoked fish in groundnut sauce",
+    "suggestedMealType": "dinner",
+    "ingredientsRaw": "Smoked fish, groundnut paste, tomato",
+    "methodRaw": "Soak fish, simmer in groundnut sauce 20 minutes.",
+    "submittedBy": "Ruth Akello",
+    "status": "pending",
+    "createdAt": "2026-10-28T12:00:00Z"
+  },
+  {
+    "id": "sug_4",
+    "name": "Chapati pizza",
+    "suggestedMealType": "snack",
+    "ingredientsRaw": "Chapati, tomato paste, cheese, green pepper",
+    "methodRaw": "Top chapati and grill until the cheese melts.",
+    "submittedBy": "Kevin Ouma",
+    "status": "pending",
+    "createdAt": "2026-10-28T05:00:00Z"
+  },
+  {
+    "id": "sug_5",
+    "name": "Pancakes with passion fruit",
+    "suggestedMealType": "pastry",
+    "ingredientsRaw": "Wheat flour, eggs, milk, passion fruit",
+    "methodRaw": "Make thin pancakes, pour passion pulp over.",
+    "submittedBy": "Faith Kemigisha",
+    "status": "pending",
+    "createdAt": "2026-10-27T22:00:00Z"
+  },
+  {
+    "id": "sug_6",
+    "name": "Nsenene (grasshopper) fry",
+    "suggestedMealType": "snack",
+    "ingredientsRaw": "Grasshoppers, onion, salt",
+    "methodRaw": "Pluck, wash and dry fry until crisp.",
+    "submittedBy": "Joseph Kato",
+    "status": "pending",
+    "createdAt": "2026-10-27T15:00:00Z"
+  }
+]

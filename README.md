@@ -4,7 +4,8 @@ DomEase (Domestic Ease) for iOS and Android: meals, cleaning and one shared shop
 
 ```bash
 flutter pub get
-flutter run
+flutter run -t lib/main_development.dart   # demo data, no server needed
+flutter analyze
 flutter test
 ```
 

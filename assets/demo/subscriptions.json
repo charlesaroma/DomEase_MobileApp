@@ -1,0 +1,79 @@
+[
+  {
+    "id": "sub_001",
+    "householdId": "hh_001",
+    "ownerName": "Sarah Namukasa",
+    "plan": "monthly",
+    "status": "active",
+    "provider": "MTN Mobile Money",
+    "providerRef": "FLW-554710",
+    "startedAt": "2026-10-19T09:00:00Z",
+    "renewsAt": "2026-11-12T09:00:00Z"
+  },
+  {
+    "id": "sub_003",
+    "householdId": "hh_003",
+    "ownerName": "Grace Atim",
+    "plan": "yearly",
+    "status": "cancelled",
+    "provider": "MTN Mobile Money",
+    "providerRef": "FLW-208061",
+    "startedAt": "2026-08-18T09:00:00Z",
+    "renewsAt": "2027-08-23T09:00:00Z"
+  },
+  {
+    "id": "sub_005",
+    "householdId": "hh_005",
+    "ownerName": "Esther Nabirye",
+    "plan": "yearly",
+    "status": "cancelled",
+    "provider": "Airtel Money",
+    "providerRef": "FLW-460160",
+    "startedAt": "2026-09-12T09:00:00Z",
+    "renewsAt": "2027-06-16T09:00:00Z"
+  },
+  {
+    "id": "sub_006",
+    "householdId": "hh_006",
+    "ownerName": "Patrick Ssempa",
+    "plan": "yearly",
+    "status": "past_due",
+    "provider": "MTN Mobile Money",
+    "providerRef": "FLW-800675",
+    "startedAt": "2026-08-24T09:00:00Z",
+    "renewsAt": "2026-12-08T09:00:00Z"
+  },
+  {
+    "id": "sub_009",
+    "householdId": "hh_009",
+    "ownerName": "Agnes Nansubuga",
+    "plan": "yearly",
+    "status": "active",
+    "provider": "MTN Mobile Money",
+    "providerRef": "FLW-517225",
+    "startedAt": "2026-09-13T09:00:00Z",
+    "renewsAt": "2027-05-18T09:00:00Z"
+  },
+  {
+    "id": "sub_012",
+    "householdId": "hh_012",
+    "ownerName": "Samuel Wasswa",
+    "plan": "yearly",
+    "status": "active",
+    "provider": "MTN Mobile Money",
+    "providerRef": "FLW-578825",
+    "startedAt": "2026-09-25T09:00:00Z",
+    "renewsAt": "2027-08-12T09:00:00Z"
+  },
+  {
+    "id": "sub_015",
+    "householdId": "hh_015",
+    "ownerName": "Doreen Nalwoga",
+    "plan": "yearly",
+    "status": "past_due",
+    "provider": "MTN Mobile Money",
+    "providerRef": "FLW-220956",
+    "startedAt": "2026-10-19T09:00:00Z",
+    "renewsAt": "2027-07-06T09:00:00Z"
+  }
+]

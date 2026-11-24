@@ -1,0 +1,51 @@
+{
+  "id": "premium",
+  "title": "Premium and payments",
+  "updated": "2026-10-30",
+  "summary": "Premium is optional. You choose monthly or yearly and pay with MTN Mobile Money or Airtel Money. It covers your whole home, removes adverts, and you can stop it at any time; it then runs until the end of the period you paid for.",
+  "sections": [
+    {
+      "heading": "What Premium includes",
+      "paragraphs": [
+        "Premium unlocks the House Help guides and vetting, special occasion menus, healthier pastry versions, diabetic and PCOS friendly ideas, allergy profiles for each person, eating history and trends, favourites, household sharing and no adverts. The current list is always shown on the Premium screen in the app."
+      ]
+    },
+    {
+      "heading": "Prices",
+      "paragraphs": [
+        "Prices are shown in the app before you pay, in Uganda Shillings, and include any taxes we must charge. If we change a price we will tell you before your next payment."
+      ]
+    },
+    {
+      "heading": "Paying",
+      "paragraphs": [
+        "You pay through MTN Mobile Money or Airtel Money using our payment provider's secure page. You approve each payment on your own phone with your PIN. DomEase never sees or stores your PIN.",
+        "Premium starts as soon as the payment is confirmed."
+      ]
+    },
+    {
+      "heading": "Renewing",
+      "paragraphs": [
+        "Mobile money does not take payments automatically. When your period is close to ending we remind you in the app, and you choose whether to pay for another period."
+      ]
+    },
+    {
+      "heading": "Stopping Premium",
+      "paragraphs": [
+        "You can stop at any time simply by not renewing. Premium stays on until the end of the period you paid for, then your home returns to the free plan. Nothing you created is deleted."
+      ]
+    },
+    {
+      "heading": "Refunds",
+      "paragraphs": [
+        "If a payment was taken twice, or Premium did not start after you paid, contact hello@domease.app and we will put it right or refund you. Otherwise payments for a period that has started are not refunded, except where the law of Uganda gives you a right to one."
+      ]
+    },
+    {
+      "heading": "Sharing Premium",
+      "paragraphs": [
+        "Premium belongs to the home, so everyone who joins your home with your invite code enjoys it. If the owner deletes their account, Premium ends for the home."
+      ]
+    }
+  ]
+}

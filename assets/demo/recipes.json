@@ -1,0 +1,1181 @@
+[
+  {
+    "id": "rec_katogo",
+    "name": "Matoke katogo with beans",
+    "mealType": "breakfast",
+    "cuisine": "Ugandan",
+    "ageGroups": [
+      "kids",
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Fibre",
+      "Plant protein"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 8,
+        "unit": "pcs",
+        "name": "Matoke",
+        "substitute": "Green bananas or plantain"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "Beans, cooked"
+      },
+      {
+        "amount": 2,
+        "unit": "pcs",
+        "name": "Tomatoes"
+      },
+      {
+        "amount": 1,
+        "unit": "pcs",
+        "name": "Onion"
+      },
+      {
+        "amount": 2,
+        "unit": "tbsp",
+        "name": "Cooking oil"
+      }
+    ],
+    "steps": [
+      "Peel the matoke and cut into chunks.",
+      "Fry the onion and tomatoes in the oil until soft.",
+      "Add the matoke, beans and enough water to cover. Simmer 25 minutes until soft.",
+      "Season with salt and serve hot."
+    ],
+    "dietary": [],
+    "occasions": [],
+    "vegForward": true,
+    "status": "published"
+  },
+  {
+    "id": "rec_porridge",
+    "name": "Millet porridge",
+    "mealType": "breakfast",
+    "cuisine": "Ugandan",
+    "ageGroups": [
+      "kids",
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Iron",
+      "Slow energy"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "Millet flour",
+        "substitute": "Sorghum flour"
+      },
+      {
+        "amount": 1,
+        "unit": "l",
+        "name": "Water"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "Milk"
+      },
+      {
+        "amount": 2,
+        "unit": "tbsp",
+        "name": "Sugar"
+      }
+    ],
+    "steps": [
+      "Mix the flour with a cup of cold water into a smooth paste.",
+      "Bring the rest of the water to the boil and stir in the paste.",
+      "Cook 10 minutes, stirring, then add milk and sugar."
+    ],
+    "dietary": [
+      "diabetic"
+    ],
+    "occasions": [],
+    "vegForward": true,
+    "status": "published"
+  },
+  {
+    "id": "rec_rolex",
+    "name": "Rolex (chapati and egg roll)",
+    "mealType": "breakfast",
+    "cuisine": "Ugandan",
+    "ageGroups": [
+      "kids",
+      "adults"
+    ],
+    "benefits": [
+      "Protein"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "pcs",
+        "name": "Chapati"
+      },
+      {
+        "amount": 6,
+        "unit": "pcs",
+        "name": "Eggs"
+      },
+      {
+        "amount": 1,
+        "unit": "pcs",
+        "name": "Onion"
+      },
+      {
+        "amount": 2,
+        "unit": "pcs",
+        "name": "Tomatoes"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "Cabbage"
+      }
+    ],
+    "steps": [
+      "Beat the eggs with chopped onion, tomato and cabbage.",
+      "Fry thin omelettes in a hot pan.",
+      "Lay each omelette on a warm chapati and roll up."
+    ],
+    "dietary": [],
+    "occasions": [],
+    "vegForward": false,
+    "status": "published"
+  },
+  {
+    "id": "rec_oats",
+    "name": "Oats with banana and groundnut",
+    "mealType": "breakfast",
+    "cuisine": "Pan-African",
+    "ageGroups": [
+      "kids",
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Fibre",
+      "Heart health"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "Oats"
+      },
+      {
+        "amount": 500,
+        "unit": "ml",
+        "name": "Milk"
+      },
+      {
+        "amount": 2,
+        "unit": "pcs",
+        "name": "Bananas"
+      },
+      {
+        "amount": 2,
+        "unit": "tbsp",
+        "name": "Groundnut paste"
+      }
+    ],
+    "steps": [
+      "Simmer the oats in milk for 5 minutes.",
+      "Slice the bananas over the top.",
+      "Finish with a spoon of groundnut paste."
+    ],
+    "dietary": [
+      "diabetic",
+      "pcos"
+    ],
+    "occasions": [],
+    "vegForward": true,
+    "status": "published"
+  },
+  {
+    "id": "rec_cassava",
+    "name": "Boiled cassava and tea",
+    "mealType": "breakfast",
+    "cuisine": "Ugandan",
+    "ageGroups": [
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Slow energy"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 1,
+        "unit": "kg",
+        "name": "Cassava",
+        "substitute": "Sweet potatoes"
+      },
+      {
+        "amount": 1,
+        "unit": "l",
+        "name": "Water"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "Tea leaves"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "Milk"
+      }
+    ],
+    "steps": [
+      "Peel the cassava, remove the core and cut into pieces.",
+      "Boil 25 minutes until tender.",
+      "Serve with milky tea."
+    ],
+    "dietary": [],
+    "occasions": [],
+    "vegForward": true,
+    "status": "published"
+  },
+  {
+    "id": "rec_luwombo",
+    "name": "Chicken luwombo",
+    "mealType": "lunch",
+    "cuisine": "Ugandan",
+    "ageGroups": [
+      "kids",
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Protein"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 1,
+        "unit": "kg",
+        "name": "Chicken"
+      },
+      {
+        "amount": 1,
+        "unit": "pcs",
+        "name": "Onion"
+      },
+      {
+        "amount": 3,
+        "unit": "pcs",
+        "name": "Tomatoes"
+      },
+      {
+        "amount": 4,
+        "unit": "pcs",
+        "name": "Banana leaves",
+        "substitute": "Foil"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "Groundnut paste"
+      }
+    ],
+    "steps": [
+      "Cut the chicken into pieces and season.",
+      "Mix with onion, tomato and groundnut paste.",
+      "Wrap in softened banana leaves and steam for 1 hour."
+    ],
+    "dietary": [],
+    "occasions": [
+      "christmas",
+      "birthday"
+    ],
+    "vegForward": false,
+    "status": "published"
+  },
+  {
+    "id": "rec_beans_rice",
+    "name": "Beans and rice",
+    "mealType": "lunch",
+    "cuisine": "Ugandan",
+    "ageGroups": [
+      "kids",
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Plant protein",
+      "Fibre"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "Rice"
+      },
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "Beans, dry"
+      },
+      {
+        "amount": 1,
+        "unit": "pcs",
+        "name": "Onion"
+      },
+      {
+        "amount": 2,
+        "unit": "pcs",
+        "name": "Tomatoes"
+      },
+      {
+        "amount": 2,
+        "unit": "tbsp",
+        "name": "Cooking oil"
+      }
+    ],
+    "steps": [
+      "Soak the beans overnight and boil until soft.",
+      "Fry onion and tomato, add the beans and simmer.",
+      "Cook the rice separately and serve together."
+    ],
+    "dietary": [],
+    "occasions": [],
+    "vegForward": true,
+    "status": "published"
+  },
+  {
+    "id": "rec_gnut_stew",
+    "name": "Groundnut stew with posho and sukuma",
+    "mealType": "lunch",
+    "cuisine": "Ugandan",
+    "ageGroups": [
+      "kids",
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Plant protein",
+      "Iron"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 1,
+        "unit": "kg",
+        "name": "Groundnuts"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "Posho (maize flour)"
+      },
+      {
+        "amount": 1,
+        "unit": "bunch",
+        "name": "Sukuma wiki",
+        "substitute": "Spinach or dodo"
+      },
+      {
+        "amount": 2,
+        "unit": "pcs",
+        "name": "Tomatoes"
+      },
+      {
+        "amount": 1,
+        "unit": "pcs",
+        "name": "Onion"
+      }
+    ],
+    "steps": [
+      "Pound or blend the groundnuts into a paste.",
+      "Simmer with onion and tomato for 30 minutes, stirring.",
+      "Cook the posho into a firm bread.",
+      "Fry the sukuma wiki briefly and serve."
+    ],
+    "dietary": [
+      "pcos"
+    ],
+    "occasions": [],
+    "vegForward": true,
+    "status": "published"
+  },
+  {
+    "id": "rec_fish",
+    "name": "Tilapia in tomato sauce",
+    "mealType": "lunch",
+    "cuisine": "East African",
+    "ageGroups": [
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Protein",
+      "Omega 3"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 2,
+        "unit": "pcs",
+        "name": "Tilapia",
+        "substitute": "Any firm white fish"
+      },
+      {
+        "amount": 3,
+        "unit": "pcs",
+        "name": "Tomatoes"
+      },
+      {
+        "amount": 1,
+        "unit": "pcs",
+        "name": "Onion"
+      },
+      {
+        "amount": 1,
+        "unit": "pcs",
+        "name": "Green pepper"
+      }
+    ],
+    "steps": [
+      "Season and lightly fry the fish.",
+      "Make a sauce of onion, tomato and pepper.",
+      "Simmer the fish in the sauce for 10 minutes."
+    ],
+    "dietary": [
+      "diabetic",
+      "pcos"
+    ],
+    "occasions": [],
+    "vegForward": false,
+    "status": "published"
+  },
+  {
+    "id": "rec_pilau",
+    "name": "Beef pilau",
+    "mealType": "lunch",
+    "cuisine": "East African",
+    "ageGroups": [
+      "kids",
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Protein"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "Beef"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "Rice"
+      },
+      {
+        "amount": 2,
+        "unit": "tbsp",
+        "name": "Pilau masala"
+      },
+      {
+        "amount": 2,
+        "unit": "pcs",
+        "name": "Onion"
+      }
+    ],
+    "steps": [
+      "Brown the onions deeply.",
+      "Add beef and masala, cook 20 minutes.",
+      "Add rice and water, cover and cook until dry."
+    ],
+    "dietary": [],
+    "occasions": [
+      "eid",
+      "christmas"
+    ],
+    "vegForward": false,
+    "status": "published"
+  },
+  {
+    "id": "rec_matoke_meat",
+    "name": "Matoke with beef stew",
+    "mealType": "dinner",
+    "cuisine": "Ugandan",
+    "ageGroups": [
+      "kids",
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Protein",
+      "Potassium"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 10,
+        "unit": "pcs",
+        "name": "Matoke",
+        "substitute": "Plantain"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "Beef"
+      },
+      {
+        "amount": 2,
+        "unit": "pcs",
+        "name": "Tomatoes"
+      },
+      {
+        "amount": 1,
+        "unit": "pcs",
+        "name": "Onion"
+      }
+    ],
+    "steps": [
+      "Steam the peeled matoke in leaves until soft, then mash.",
+      "Stew the beef with onion and tomato for 40 minutes.",
+      "Serve the stew over the matoke."
+    ],
+    "dietary": [],
+    "occasions": [],
+    "vegForward": false,
+    "status": "published"
+  },
+  {
+    "id": "rec_gnut_dinner",
+    "name": "Groundnut stew",
+    "mealType": "dinner",
+    "cuisine": "Ugandan",
+    "ageGroups": [
+      "kids",
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Plant protein"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "Groundnuts"
+      },
+      {
+        "amount": 2,
+        "unit": "kg",
+        "name": "Posho (maize flour)"
+      },
+      {
+        "amount": 1,
+        "unit": "bunch",
+        "name": "Sukuma wiki"
+      }
+    ],
+    "steps": [
+      "Make a smooth groundnut sauce and simmer 30 minutes.",
+      "Serve with posho and greens."
+    ],
+    "dietary": [],
+    "occasions": [],
+    "vegForward": true,
+    "status": "published"
+  },
+  {
+    "id": "rec_veg_curry",
+    "name": "Vegetable and bean curry",
+    "mealType": "dinner",
+    "cuisine": "Pan-African",
+    "ageGroups": [
+      "kids",
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Fibre",
+      "Vitamins"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "Beans, cooked"
+      },
+      {
+        "amount": 2,
+        "unit": "pcs",
+        "name": "Carrots"
+      },
+      {
+        "amount": 1,
+        "unit": "pcs",
+        "name": "Eggplant"
+      },
+      {
+        "amount": 400,
+        "unit": "ml",
+        "name": "Coconut milk"
+      },
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "Rice"
+      }
+    ],
+    "steps": [
+      "Fry onion, carrot and eggplant.",
+      "Add beans and coconut milk, simmer 15 minutes.",
+      "Serve with rice."
+    ],
+    "dietary": [
+      "diabetic",
+      "pcos"
+    ],
+    "occasions": [],
+    "vegForward": true,
+    "status": "published"
+  },
+  {
+    "id": "rec_chicken_stew",
+    "name": "Chicken stew with sweet potatoes",
+    "mealType": "dinner",
+    "cuisine": "Ugandan",
+    "ageGroups": [
+      "kids",
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Protein",
+      "Vitamin A"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 1,
+        "unit": "kg",
+        "name": "Chicken"
+      },
+      {
+        "amount": 1,
+        "unit": "kg",
+        "name": "Sweet potatoes"
+      },
+      {
+        "amount": 2,
+        "unit": "pcs",
+        "name": "Tomatoes"
+      },
+      {
+        "amount": 1,
+        "unit": "pcs",
+        "name": "Onion"
+      }
+    ],
+    "steps": [
+      "Brown the chicken pieces.",
+      "Add onion and tomato and simmer 35 minutes.",
+      "Boil the sweet potatoes and serve alongside."
+    ],
+    "dietary": [
+      "diabetic"
+    ],
+    "occasions": [],
+    "vegForward": false,
+    "status": "published"
+  },
+  {
+    "id": "rec_malakwang",
+    "name": "Malakwang with sweet potatoes",
+    "mealType": "dinner",
+    "cuisine": "Ugandan (Acholi)",
+    "ageGroups": [
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Iron",
+      "Fibre"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 2,
+        "unit": "bunch",
+        "name": "Malakwang leaves",
+        "substitute": "Sorrel or spinach"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "Groundnut paste"
+      },
+      {
+        "amount": 1,
+        "unit": "kg",
+        "name": "Sweet potatoes"
+      }
+    ],
+    "steps": [
+      "Boil the leaves briefly and drain.",
+      "Stir in groundnut paste with a little water and simmer.",
+      "Serve with boiled sweet potatoes."
+    ],
+    "dietary": [],
+    "occasions": [],
+    "vegForward": true,
+    "status": "published"
+  },
+  {
+    "id": "rec_gnuts_snack",
+    "name": "Roasted groundnuts",
+    "mealType": "snack",
+    "cuisine": "Ugandan",
+    "ageGroups": [
+      "kids",
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Protein"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "Groundnuts"
+      }
+    ],
+    "steps": [
+      "Roast in a dry pan, stirring, until golden.",
+      "Cool and pack in small bags."
+    ],
+    "dietary": [],
+    "occasions": [],
+    "vegForward": true,
+    "status": "published"
+  },
+  {
+    "id": "rec_fruit_cup",
+    "name": "Fruit cup (school pack)",
+    "mealType": "snack",
+    "cuisine": "Pan-African",
+    "ageGroups": [
+      "kids"
+    ],
+    "benefits": [
+      "Vitamin C"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 1,
+        "unit": "pcs",
+        "name": "Mango"
+      },
+      {
+        "amount": 1,
+        "unit": "pcs",
+        "name": "Pineapple"
+      },
+      {
+        "amount": 2,
+        "unit": "pcs",
+        "name": "Bananas"
+      }
+    ],
+    "steps": [
+      "Chop the fruit into small pieces.",
+      "Pack into lunch tubs. No cooking needed."
+    ],
+    "dietary": [],
+    "occasions": [],
+    "vegForward": true,
+    "status": "published"
+  },
+  {
+    "id": "rec_gonja",
+    "name": "Roasted gonja",
+    "mealType": "snack",
+    "cuisine": "Ugandan",
+    "ageGroups": [
+      "kids",
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Potassium"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 4,
+        "unit": "pcs",
+        "name": "Gonja (sweet plantain)"
+      }
+    ],
+    "steps": [
+      "Peel and roast over charcoal until soft and charred."
+    ],
+    "dietary": [],
+    "occasions": [],
+    "vegForward": true,
+    "status": "published"
+  },
+  {
+    "id": "rec_popcorn",
+    "name": "Popcorn",
+    "mealType": "snack",
+    "cuisine": "Pan-African",
+    "ageGroups": [
+      "kids",
+      "adults"
+    ],
+    "benefits": [
+      "Fibre"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "Popcorn kernels"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "Cooking oil"
+      }
+    ],
+    "steps": [
+      "Heat oil, add kernels, cover and shake until popping stops."
+    ],
+    "dietary": [],
+    "occasions": [],
+    "vegForward": true,
+    "status": "published"
+  },
+  {
+    "id": "rec_mandazi",
+    "name": "Mandazi",
+    "mealType": "pastry",
+    "cuisine": "East African",
+    "ageGroups": [
+      "kids",
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Energy"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "Wheat flour"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "Sugar"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "Coconut milk"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "Yeast"
+      },
+      {
+        "amount": 500,
+        "unit": "ml",
+        "name": "Cooking oil"
+      }
+    ],
+    "steps": [
+      "Mix flour, sugar and yeast; add coconut milk to a soft dough.",
+      "Rest 1 hour, roll out and cut into triangles.",
+      "Deep fry until golden."
+    ],
+    "dietary": [],
+    "occasions": [],
+    "vegForward": false,
+    "status": "published",
+    "healthyVariant": {
+      "isPremium": true,
+      "summary": "Baked, not fried, with half the sugar and a third wholemeal flour.",
+      "ingredients": [
+        {
+          "amount": 350,
+          "unit": "g",
+          "name": "Wheat flour"
+        },
+        {
+          "amount": 150,
+          "unit": "g",
+          "name": "Wholemeal flour"
+        },
+        {
+          "amount": 50,
+          "unit": "g",
+          "name": "Sugar"
+        },
+        {
+          "amount": 250,
+          "unit": "ml",
+          "name": "Coconut milk"
+        },
+        {
+          "amount": 1,
+          "unit": "tsp",
+          "name": "Yeast"
+        }
+      ],
+      "steps": [
+        "Make the dough as usual with less sugar.",
+        "Bake at 200 C for 15 minutes, turning once."
+      ]
+    }
+  },
+  {
+    "id": "rec_banana_bread",
+    "name": "Banana bread",
+    "mealType": "pastry",
+    "cuisine": "Pan-African",
+    "ageGroups": [
+      "kids",
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Potassium"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 3,
+        "unit": "pcs",
+        "name": "Bananas"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "Wheat flour"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "Sugar"
+      },
+      {
+        "amount": 2,
+        "unit": "pcs",
+        "name": "Eggs"
+      },
+      {
+        "amount": 80,
+        "unit": "ml",
+        "name": "Cooking oil"
+      }
+    ],
+    "steps": [
+      "Mash bananas, mix with eggs, oil and sugar.",
+      "Fold in flour and baking powder.",
+      "Bake at 180 C for 50 minutes."
+    ],
+    "dietary": [],
+    "occasions": [],
+    "vegForward": false,
+    "status": "published",
+    "healthyVariant": {
+      "isPremium": true,
+      "summary": "Oat flour and no added sugar; the ripe bananas do the sweetening.",
+      "ingredients": [
+        {
+          "amount": 4,
+          "unit": "pcs",
+          "name": "Bananas"
+        },
+        {
+          "amount": 250,
+          "unit": "g",
+          "name": "Oat flour"
+        },
+        {
+          "amount": 2,
+          "unit": "pcs",
+          "name": "Eggs"
+        }
+      ],
+      "steps": [
+        "Use very ripe bananas.",
+        "Bake at 180 C for 45 minutes."
+      ]
+    }
+  },
+  {
+    "id": "rec_scones",
+    "name": "Scones",
+    "mealType": "pastry",
+    "cuisine": "British",
+    "ageGroups": [
+      "kids",
+      "adults",
+      "elderly"
+    ],
+    "benefits": [
+      "Energy"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 450,
+        "unit": "g",
+        "name": "Wheat flour"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "Butter"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "Milk"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "Sugar"
+      }
+    ],
+    "steps": [
+      "Rub butter into flour, add sugar and milk.",
+      "Cut rounds and bake at 220 C for 12 minutes."
+    ],
+    "dietary": [],
+    "occasions": [
+      "easter"
+    ],
+    "vegForward": false,
+    "status": "published",
+    "healthyVariant": {
+      "isPremium": true,
+      "summary": "Wholemeal flour, yoghurt for half the butter.",
+      "ingredients": [
+        {
+          "amount": 450,
+          "unit": "g",
+          "name": "Wholemeal flour"
+        },
+        {
+          "amount": 50,
+          "unit": "g",
+          "name": "Butter"
+        },
+        {
+          "amount": 150,
+          "unit": "ml",
+          "name": "Yoghurt"
+        }
+      ],
+      "steps": [
+        "Mix as usual and bake 14 minutes."
+      ]
+    }
+  },
+  {
+    "id": "rec_doughnuts",
+    "name": "Doughnuts",
+    "mealType": "pastry",
+    "cuisine": "Pan-African",
+    "ageGroups": [
+      "kids",
+      "adults"
+    ],
+    "benefits": [
+      "Energy"
+    ],
+    "servings": 4,
+    "ingredients": [
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "Wheat flour"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "Sugar"
+      },
+      {
+        "amount": 2,
+        "unit": "pcs",
+        "name": "Eggs"
+      },
+      {
+        "amount": 500,
+        "unit": "ml",
+        "name": "Cooking oil"
+      }
+    ],
+    "steps": [
+      "Make a soft yeasted dough and rest.",
+      "Shape rings and fry until golden."
+    ],
+    "dietary": [],
+    "occasions": [
+      "birthday"
+    ],
+    "vegForward": false,
+    "status": "published",
+    "healthyVariant": {
+      "isPremium": true,
+      "summary": "Air fried or baked, with a cinnamon dusting instead of sugar.",
+      "ingredients": [
+        {
+          "amount": 500,
+          "unit": "g",
+          "name": "Wheat flour"
+        },
+        {
+          "amount": 40,
+          "unit": "g",
+          "name": "Sugar"
+        },
+        {
+          "amount": 2,
+          "unit": "pcs",
+          "name": "Eggs"
+        }
+      ],
+      "steps": [
+        "Bake at 190 C for 12 minutes."
+      ]
+    }
+  }
+]

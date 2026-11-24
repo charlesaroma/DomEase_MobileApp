@@ -9,9 +9,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  dio: ^5.11.1
   flutter_riverpod: ^3.4.3
   go_router: ^18.0.2
+  in_app_review: ^2.0.10
+  package_info_plus: ^8.3.0
   path_drawing: ^1.0.1
+  shared_preferences: ^2.5.5
+  url_launcher: ^6.3.1
 
 dev_dependencies:
   flutter_test:
@@ -21,6 +26,14 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  # Demo data: the API's exact JSON, shared with the admin dashboard's demo
+  # mode (docs/04-api-contract.md). Read only by the development flavor.
+  assets:
+    - assets/demo/
+    # Terms, Privacy, Premium and health notice: the copy for no connection.
+    # The API serves the live version at /legal/:id; the website reads these.
+    - assets/legal/
 
   # Brand type (SIL Open Font Licence, assets/fonts/OFL.txt). Outfit and Inter
   # are variable; weights are applied with FontVariation (ui/core/themes/typography.dart).

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "team_1",
+    "name": "Pearl",
+    "email": "pearl@domease.app",
+    "role": "owner",
+    "lastActiveAt": "2026-10-29T06:00:00Z"
+  },
+  {
+    "id": "team_2",
+    "name": "Charles Aroma",
+    "email": "charles@raijintechhub.com",
+    "role": "admin",
+    "lastActiveAt": "2026-10-29T08:00:00Z"
+  },
+  {
+    "id": "team_3",
+    "name": "Content moderator",
+    "email": "moderator@domease.app",
+    "role": "moderator",
+    "lastActiveAt": "2026-10-27T09:00:00Z"
+  }
+]

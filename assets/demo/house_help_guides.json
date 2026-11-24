@@ -1,0 +1,34 @@
+[
+  {
+    "id": "guide_recruit",
+    "title": "Recruitment guide",
+    "summary": "A 10 question interview framework for hiring House Help.",
+    "pages": 12,
+    "fileUrl": "/guides/guide_recruit.pdf",
+    "updatedAt": "2026-09-29T09:00:00Z"
+  },
+  {
+    "id": "guide_orient",
+    "title": "Orientation guide",
+    "summary": "Expectations for the first month, broken down by area of the home.",
+    "pages": 9,
+    "fileUrl": "/guides/guide_orient.pdf",
+    "updatedAt": "2026-09-29T09:00:00Z"
+  },
+  {
+    "id": "guide_checklist",
+    "title": "Orientation checklist",
+    "summary": "A printable checklist to walk through on day one.",
+    "pages": 2,
+    "fileUrl": "/guides/guide_checklist.pdf",
+    "updatedAt": "2026-09-29T09:00:00Z"
+  },
+  {
+    "id": "guide_appraisal",
+    "title": "Appraisal guide",
+    "summary": "A fair feedback model for review season.",
+    "pages": 7,
+    "fileUrl": "/guides/guide_appraisal.pdf",
+    "updatedAt": "2026-09-29T09:00:00Z"
+  }
+]

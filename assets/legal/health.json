@@ -1,0 +1,44 @@
+{
+  "id": "health",
+  "title": "Health and dietary notice",
+  "updated": "2026-10-30",
+  "summary": "DomEase's meal and dietary ideas are general guidance for everyday home cooking. They are not medical advice. Check allergies yourself, and speak to a doctor or dietitian about any health condition.",
+  "sections": [
+    {
+      "heading": "General guidance only",
+      "paragraphs": [
+        "Meal plans, recipes, health nudges and the diabetic and PCOS friendly suggestions are written to help with everyday cooking. They are not medical advice, a diagnosis, a treatment or a replacement for a qualified professional."
+      ]
+    },
+    {
+      "heading": "Allergies",
+      "paragraphs": [
+        "Allergy profiles and warnings help you spot common allergens, but they depend on the details you enter and on ingredient names. Always read labels and check every ingredient before cooking for someone with an allergy."
+      ]
+    },
+    {
+      "heading": "Health conditions",
+      "paragraphs": [
+        "If you or someone in your home has diabetes, PCOS, a heart or kidney condition, is pregnant, or needs a special diet for any reason, speak to a doctor or dietitian before changing what you eat."
+      ]
+    },
+    {
+      "heading": "Children and older people",
+      "paragraphs": [
+        "Portion sizes are a guide for an average household. Young children, older people and anyone unwell may need different amounts; follow advice from a health worker."
+      ]
+    },
+    {
+      "heading": "Food safety",
+      "paragraphs": [
+        "Cook meat, fish and eggs through, keep raw and cooked food apart, use safe drinking water, and store leftovers covered and cool."
+      ]
+    },
+    {
+      "heading": "In an emergency",
+      "paragraphs": [
+        "If someone has a severe allergic reaction or becomes seriously unwell, get medical help at once."
+      ]
+    }
+  ]
+}

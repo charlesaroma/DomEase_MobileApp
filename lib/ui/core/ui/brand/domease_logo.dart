@@ -2,6 +2,8 @@
 // The house in bloom, painted from the approved artwork's paths
 // (brand_paths.dart), so it is sharp at every size and can take any of the
 // approved colourways. Never rebuild the logo from a Text widget.
+import 'dart:math' as math;
+
 import 'package:flutter/widgets.dart';
 import 'package:path_drawing/path_drawing.dart';
 
@@ -50,6 +52,7 @@ class DomEaseLogo extends StatelessWidget {
     this.width,
     this.height,
     this.semanticLabel = 'DomEase',
+    this.alignment = AlignmentDirectional.centerStart,
   }) : assert(width != null || height != null, 'Give the logo a width or a height');
 
   final LogoLayout layout;
@@ -57,6 +60,10 @@ class DomEaseLogo extends StatelessWidget {
   final double? width;
   final double? height;
   final String semanticLabel;
+
+  /// Where the logo sits when its parent offers more room than it needs
+  /// (a ListView row, a stretched Column). The logo itself never stretches.
+  final AlignmentGeometry alignment;
 
   BrandArt get art => switch (layout) {
         LogoLayout.stacked => BrandPaths.stacked,
@@ -73,13 +80,21 @@ class DomEaseLogo extends StatelessWidget {
     final a = art;
     final w = width ?? height! * a.width / a.height;
     final h = height ?? width! * a.height / a.width;
-    return Semantics(
-      label: semanticLabel,
-      image: true,
-      child: SizedBox(
-        width: w,
-        height: h,
-        child: CustomPaint(painter: _LogoPainter(a, tone)),
+    // A parent that forces a width (ListView, Column with stretch) would
+    // otherwise pull the artwork out of shape. Align takes the forced size and
+    // gives the logo loose constraints, so it keeps its exact proportions.
+    return Align(
+      alignment: alignment,
+      widthFactor: 1,
+      heightFactor: 1,
+      child: Semantics(
+        label: semanticLabel,
+        image: true,
+        child: SizedBox(
+          width: w,
+          height: h,
+          child: CustomPaint(painter: _LogoPainter(a, tone)),
+        ),
       ),
     );
   }
@@ -96,7 +111,12 @@ class _LogoPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    canvas.scale(size.width / art.width, size.height / art.height);
+    // One scale for both axes, centred: the artwork can shrink or grow but
+    // never stretch (docs/05-design-system.md, logo rules).
+    final s = math.min(size.width / art.width, size.height / art.height);
+    canvas
+      ..translate((size.width - art.width * s) / 2, (size.height - art.height * s) / 2)
+      ..scale(s);
     for (final layer in art.layers) {
       final path = _cache.putIfAbsent(layer.d, () => parseSvgPathData(layer.d));
       final paint = Paint()

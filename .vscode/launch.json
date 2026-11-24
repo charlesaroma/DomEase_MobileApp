@@ -1,0 +1,8 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    { "name": "DomEase (demo data)", "request": "launch", "type": "dart", "program": "lib/main_development.dart" },
+    { "name": "DomEase (staging API)", "request": "launch", "type": "dart", "program": "lib/main_staging.dart" },
+    { "name": "DomEase (production)", "request": "launch", "type": "dart", "program": "lib/main.dart" }
+  ]
+}

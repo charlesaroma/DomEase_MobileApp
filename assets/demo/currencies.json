@@ -1,0 +1,66 @@
+{
+  "base": "USD",
+  "updatedAt": "2026-10-27T09:00:00Z",
+  "rates": [
+    {
+      "code": "UGX",
+      "name": "Ugandan Shilling",
+      "perUsd": 3690
+    },
+    {
+      "code": "KES",
+      "name": "Kenyan Shilling",
+      "perUsd": 129.2
+    },
+    {
+      "code": "TZS",
+      "name": "Tanzanian Shilling",
+      "perUsd": 2655
+    },
+    {
+      "code": "GHS",
+      "name": "Ghanaian Cedi",
+      "perUsd": 15.4
+    },
+    {
+      "code": "NGN",
+      "name": "Nigerian Naira",
+      "perUsd": 1545
+    },
+    {
+      "code": "ZAR",
+      "name": "South African Rand",
+      "perUsd": 18.1
+    },
+    {
+      "code": "USD",
+      "name": "US Dollar",
+      "perUsd": 1
+    },
+    {
+      "code": "GBP",
+      "name": "British Pound",
+      "perUsd": 0.77
+    },
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "perUsd": 0.92
+    },
+    {
+      "code": "INR",
+      "name": "Indian Rupee",
+      "perUsd": 84.1
+    },
+    {
+      "code": "CAD",
+      "name": "Canadian Dollar",
+      "perUsd": 1.37
+    },
+    {
+      "code": "AUD",
+      "name": "Australian Dollar",
+      "perUsd": 1.52
+    }
+  ]
+}

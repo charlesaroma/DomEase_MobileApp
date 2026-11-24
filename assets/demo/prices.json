@@ -1,0 +1,302 @@
+[
+  {
+    "name": "Matoke",
+    "pack": "bunch",
+    "price": 25000,
+    "category": "Produce"
+  },
+  {
+    "name": "Beans, cooked",
+    "pack": "500 g",
+    "price": 3000,
+    "category": "Grains and staples"
+  },
+  {
+    "name": "Beans, dry",
+    "pack": "1 kg",
+    "price": 5000,
+    "category": "Grains and staples"
+  },
+  {
+    "name": "Tomatoes",
+    "pack": "1 kg",
+    "price": 5000,
+    "category": "Produce"
+  },
+  {
+    "name": "Onion",
+    "pack": "1 kg",
+    "price": 4000,
+    "category": "Produce"
+  },
+  {
+    "name": "Cooking oil",
+    "pack": "1 L",
+    "price": 12000,
+    "category": "Grains and staples"
+  },
+  {
+    "name": "Millet flour",
+    "pack": "1 kg",
+    "price": 6000,
+    "category": "Grains and staples"
+  },
+  {
+    "name": "Milk",
+    "pack": "1 L",
+    "price": 3000,
+    "category": "Dairy"
+  },
+  {
+    "name": "Sugar",
+    "pack": "1 kg",
+    "price": 5500,
+    "category": "Grains and staples"
+  },
+  {
+    "name": "Chapati",
+    "pack": "pack of 5",
+    "price": 5000,
+    "category": "Bakery"
+  },
+  {
+    "name": "Eggs",
+    "pack": "tray of 30",
+    "price": 15000,
+    "category": "Dairy"
+  },
+  {
+    "name": "Cabbage",
+    "pack": "each",
+    "price": 2000,
+    "category": "Produce"
+  },
+  {
+    "name": "Oats",
+    "pack": "500 g",
+    "price": 9000,
+    "category": "Grains and staples"
+  },
+  {
+    "name": "Bananas",
+    "pack": "hand",
+    "price": 3000,
+    "category": "Produce"
+  },
+  {
+    "name": "Groundnut paste",
+    "pack": "400 g",
+    "price": 8000,
+    "category": "Grains and staples"
+  },
+  {
+    "name": "Cassava",
+    "pack": "1 kg",
+    "price": 2500,
+    "category": "Produce"
+  },
+  {
+    "name": "Tea leaves",
+    "pack": "250 g",
+    "price": 4000,
+    "category": "Grains and staples"
+  },
+  {
+    "name": "Chicken",
+    "pack": "1 kg",
+    "price": 18000,
+    "category": "Meat and fish"
+  },
+  {
+    "name": "Banana leaves",
+    "pack": "bundle",
+    "price": 1000,
+    "category": "Produce"
+  },
+  {
+    "name": "Rice",
+    "pack": "1 kg",
+    "price": 5500,
+    "category": "Grains and staples"
+  },
+  {
+    "name": "Groundnuts",
+    "pack": "1 kg",
+    "price": 8000,
+    "category": "Grains and staples"
+  },
+  {
+    "name": "Posho (maize flour)",
+    "pack": "2 kg",
+    "price": 6500,
+    "category": "Grains and staples"
+  },
+  {
+    "name": "Sukuma wiki",
+    "pack": "bunch",
+    "price": 2000,
+    "category": "Produce"
+  },
+  {
+    "name": "Tilapia",
+    "pack": "each",
+    "price": 12000,
+    "category": "Meat and fish"
+  },
+  {
+    "name": "Green pepper",
+    "pack": "each",
+    "price": 1000,
+    "category": "Produce"
+  },
+  {
+    "name": "Beef",
+    "pack": "1 kg",
+    "price": 20000,
+    "category": "Meat and fish"
+  },
+  {
+    "name": "Pilau masala",
+    "pack": "50 g",
+    "price": 2500,
+    "category": "Grains and staples"
+  },
+  {
+    "name": "Carrots",
+    "pack": "1 kg",
+    "price": 4000,
+    "category": "Produce"
+  },
+  {
+    "name": "Eggplant",
+    "pack": "1 kg",
+    "price": 3000,
+    "category": "Produce"
+  },
+  {
+    "name": "Coconut milk",
+    "pack": "400 ml",
+    "price": 6000,
+    "category": "Grains and staples"
+  },
+  {
+    "name": "Sweet potatoes",
+    "pack": "1 kg",
+    "price": 3000,
+    "category": "Produce"
+  },
+  {
+    "name": "Malakwang leaves",
+    "pack": "bunch",
+    "price": 2000,
+    "category": "Produce"
+  },
+  {
+    "name": "Mango",
+    "pack": "each",
+    "price": 1500,
+    "category": "Produce"
+  },
+  {
+    "name": "Pineapple",
+    "pack": "each",
+    "price": 4000,
+    "category": "Produce"
+  },
+  {
+    "name": "Gonja (sweet plantain)",
+    "pack": "each",
+    "price": 1000,
+    "category": "Produce"
+  },
+  {
+    "name": "Popcorn kernels",
+    "pack": "500 g",
+    "price": 4000,
+    "category": "Grains and staples"
+  },
+  {
+    "name": "Wheat flour",
+    "pack": "2 kg",
+    "price": 9000,
+    "category": "Grains and staples"
+  },
+  {
+    "name": "Yeast",
+    "pack": "sachet",
+    "price": 1500,
+    "category": "Grains and staples"
+  },
+  {
+    "name": "Butter",
+    "pack": "250 g",
+    "price": 9000,
+    "category": "Dairy"
+  },
+  {
+    "name": "Oat flour",
+    "pack": "500 g",
+    "price": 10000,
+    "category": "Grains and staples"
+  },
+  {
+    "name": "Wholemeal flour",
+    "pack": "1 kg",
+    "price": 7000,
+    "category": "Grains and staples"
+  },
+  {
+    "name": "Yoghurt",
+    "pack": "500 ml",
+    "price": 5000,
+    "category": "Dairy"
+  },
+  {
+    "name": "Soap",
+    "pack": "3 bars",
+    "price": 7500,
+    "category": "Household"
+  },
+  {
+    "name": "Dish soap",
+    "pack": "750 ml",
+    "price": 6000,
+    "category": "Household"
+  },
+  {
+    "name": "Toilet paper",
+    "pack": "10 rolls",
+    "price": 12000,
+    "category": "Household"
+  },
+  {
+    "name": "Charcoal",
+    "pack": "sack",
+    "price": 55000,
+    "category": "Household"
+  },
+  {
+    "name": "Floor cleaner",
+    "pack": "1 L",
+    "price": 9000,
+    "category": "Household"
+  },
+  {
+    "name": "Bin bags",
+    "pack": "roll",
+    "price": 4000,
+    "category": "Household"
+  },
+  {
+    "name": "Washing powder",
+    "pack": "1 kg",
+    "price": 8000,
+    "category": "Household"
+  },
+  {
+    "name": "Air freshener",
+    "pack": "can",
+    "price": 10000,
+    "category": "Household"
+  }
+]

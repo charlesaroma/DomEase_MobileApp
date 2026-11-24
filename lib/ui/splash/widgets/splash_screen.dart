@@ -1,30 +1,39 @@
 // ─── Splash ───────────────────────────────────────────────────────
 // Clay 900, the same colour as the native launch screen, so the hand over is
-// seamless. The stacked logo fades up, then the app opens on Today.
+// seamless. The stacked logo fades up while the account and household load,
+// then the app opens on Welcome, Setup or Today.
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
-import 'package:domease/routing/routes.dart';
+import 'package:domease/ui/auth/view_models/auth_viewmodel.dart';
 import 'package:domease/ui/core/themes/tokens.dart';
 import 'package:domease/ui/core/ui/brand/domease_logo.dart';
 
-class SplashScreen extends StatefulWidget {
+class SplashScreen extends ConsumerStatefulWidget {
   const SplashScreen({super.key});
 
   @override
-  State<SplashScreen> createState() => _SplashScreenState();
+  ConsumerState<SplashScreen> createState() => _SplashScreenState();
 }
 
-class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderStateMixin {
+class _SplashScreenState extends ConsumerState<SplashScreen> with SingleTickerProviderStateMixin {
   late final AnimationController _arrive = AnimationController(vsync: this, duration: AppDurations.splash)..forward();
 
   @override
   void initState() {
     super.initState();
-    _arrive.addStatusListener((status) {
-      if (status == AnimationStatus.completed && mounted) context.go(Routes.today);
-    });
+    _route();
+  }
+
+  Future<void> _route() async {
+    // Wait for both the logo's moment and the lookup, whichever is longer.
+    final moment = Future<void>.delayed(AppDurations.splash);
+    final next = await routeOnLaunch(ref);
+    await moment;
+    if (!mounted) return;
+    context.go(next);
   }
 
   @override

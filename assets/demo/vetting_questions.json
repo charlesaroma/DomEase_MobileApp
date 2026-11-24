@@ -1,0 +1,255 @@
+[
+  {
+    "id": "q1",
+    "section": "Basic fit and logistics",
+    "text": "Which days can they work?",
+    "options": [
+      {
+        "label": "Every day we need",
+        "weight": 3
+      },
+      {
+        "label": "Most of the days",
+        "weight": 2
+      },
+      {
+        "label": "Only some days",
+        "weight": 1
+      },
+      {
+        "label": "Unsure",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "section": "Basic fit and logistics",
+    "text": "How will they get to work?",
+    "options": [
+      {
+        "label": "Lives in or walks",
+        "weight": 3
+      },
+      {
+        "label": "Short boda or taxi ride",
+        "weight": 2
+      },
+      {
+        "label": "Long journey",
+        "weight": 1
+      },
+      {
+        "label": "Not sorted",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "section": "Basic fit and logistics",
+    "text": "Will they cover every zone, bathrooms and compound included?",
+    "options": [
+      {
+        "label": "Yes, all of them",
+        "weight": 3
+      },
+      {
+        "label": "All but one",
+        "weight": 2
+      },
+      {
+        "label": "Only some",
+        "weight": 1
+      },
+      {
+        "label": "Refuses most",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "section": "Skills and experience",
+    "text": "Can they cook the meals you plan most often?",
+    "options": [
+      {
+        "label": "Yes, confidently",
+        "weight": 3
+      },
+      {
+        "label": "Most of them",
+        "weight": 2
+      },
+      {
+        "label": "A few",
+        "weight": 1
+      },
+      {
+        "label": "Not yet",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "section": "Skills and experience",
+    "text": "Experience caring for children or elders?",
+    "options": [
+      {
+        "label": "Several years",
+        "weight": 3
+      },
+      {
+        "label": "Some",
+        "weight": 2
+      },
+      {
+        "label": "A little",
+        "weight": 1
+      },
+      {
+        "label": "None",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "section": "Skills and experience",
+    "text": "Experience with special diets or allergies?",
+    "options": [
+      {
+        "label": "Yes, managed them",
+        "weight": 3
+      },
+      {
+        "label": "Aware of them",
+        "weight": 2
+      },
+      {
+        "label": "Willing to learn",
+        "weight": 1
+      },
+      {
+        "label": "No",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "section": "Reliability and trust",
+    "text": "Years of experience in household work?",
+    "options": [
+      {
+        "label": "More than five",
+        "weight": 3
+      },
+      {
+        "label": "Two to five",
+        "weight": 2
+      },
+      {
+        "label": "Under two",
+        "weight": 1
+      },
+      {
+        "label": "None",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "section": "Reliability and trust",
+    "text": "Can you speak to a previous employer?",
+    "options": [
+      {
+        "label": "Yes, two or more",
+        "weight": 3
+      },
+      {
+        "label": "Yes, one",
+        "weight": 2
+      },
+      {
+        "label": "Only a friend",
+        "weight": 1
+      },
+      {
+        "label": "No one",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "section": "Reliability and trust",
+    "text": "Comfortable with a trial period?",
+    "options": [
+      {
+        "label": "Yes, gladly",
+        "weight": 3
+      },
+      {
+        "label": "Yes, if paid",
+        "weight": 2
+      },
+      {
+        "label": "Reluctant",
+        "weight": 1
+      },
+      {
+        "label": "No",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "section": "Household compatibility",
+    "text": "How do they prefer to raise a problem?",
+    "options": [
+      {
+        "label": "Talks it through early",
+        "weight": 3
+      },
+      {
+        "label": "Mentions it when asked",
+        "weight": 2
+      },
+      {
+        "label": "Keeps quiet",
+        "weight": 1
+      },
+      {
+        "label": "Leaves",
+        "weight": 0
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "section": "Household compatibility",
+    "text": "How do they handle a change of plan at short notice?",
+    "options": [
+      {
+        "label": "Adapts easily",
+        "weight": 3
+      },
+      {
+        "label": "Usually fine",
+        "weight": 2
+      },
+      {
+        "label": "Finds it hard",
+        "weight": 1
+      },
+      {
+        "label": "Will not",
+        "weight": 0
+      }
+    ]
+  }
+]

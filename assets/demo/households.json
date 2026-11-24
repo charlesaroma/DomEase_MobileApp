@@ -1,0 +1,290 @@
+[
+  {
+    "id": "hh_001",
+    "owner": {
+      "name": "Sarah Namukasa",
+      "phone": "+256 781 474 696",
+      "email": "sarah.namukasa@example.com"
+    },
+    "type": "bachelor",
+    "size": 1,
+    "currency": "UGX",
+    "region": "Kampala",
+    "tier": "premium",
+    "members": 1,
+    "zones": 4,
+    "mealsPlannedThisWeek": 3,
+    "lastActiveAt": "2026-10-19T16:00:00Z",
+    "createdAt": "2026-10-17T09:00:00Z"
+  },
+  {
+    "id": "hh_002",
+    "owner": {
+      "name": "Daniel Okello",
+      "phone": "+256 791 328 745",
+      "email": "daniel.okello@example.com"
+    },
+    "type": "family",
+    "size": 4,
+    "currency": "UGX",
+    "region": "Mbarara",
+    "tier": "free",
+    "members": 1,
+    "zones": 4,
+    "mealsPlannedThisWeek": 3,
+    "lastActiveAt": "2026-10-23T05:00:00Z",
+    "createdAt": "2026-10-19T09:00:00Z"
+  },
+  {
+    "id": "hh_003",
+    "owner": {
+      "name": "Grace Atim",
+      "phone": "+256 724 529 247",
+      "email": "grace.atim@example.com"
+    },
+    "type": "single_parent",
+    "size": 2,
+    "currency": "UGX",
+    "region": "Kampala",
+    "tier": "premium",
+    "members": 2,
+    "zones": 4,
+    "mealsPlannedThisWeek": 34,
+    "lastActiveAt": "2026-10-28T02:00:00Z",
+    "createdAt": "2026-08-16T09:00:00Z"
+  },
+  {
+    "id": "hh_004",
+    "owner": {
+      "name": "Brian Mugisha",
+      "phone": "+256 709 310 608",
+      "email": "brian.mugisha@example.com"
+    },
+    "type": "couple",
+    "size": 2,
+    "currency": "UGX",
+    "region": "Wakiso",
+    "tier": "free",
+    "members": 1,
+    "zones": 4,
+    "mealsPlannedThisWeek": 34,
+    "lastActiveAt": "2026-10-24T19:00:00Z",
+    "createdAt": "2026-08-15T09:00:00Z"
+  },
+  {
+    "id": "hh_005",
+    "owner": {
+      "name": "Esther Nabirye",
+      "phone": "+256 743 913 284",
+      "email": "esther.nabirye@example.com"
+    },
+    "type": "bachelor",
+    "size": 1,
+    "currency": "KES",
+    "region": "Nairobi",
+    "tier": "premium",
+    "members": 1,
+    "zones": 4,
+    "mealsPlannedThisWeek": 15,
+    "lastActiveAt": "2026-10-28T12:00:00Z",
+    "createdAt": "2026-09-10T09:00:00Z"
+  },
+  {
+    "id": "hh_006",
+    "owner": {
+      "name": "Patrick Ssempa",
+      "phone": "+256 762 875 450",
+      "email": "patrick.ssempa@example.com"
+    },
+    "type": "bachelor",
+    "size": 1,
+    "currency": "UGX",
+    "region": "Wakiso",
+    "tier": "premium",
+    "members": 1,
+    "zones": 4,
+    "mealsPlannedThisWeek": 9,
+    "lastActiveAt": "2026-10-19T10:00:00Z",
+    "createdAt": "2026-08-22T09:00:00Z"
+  },
+  {
+    "id": "hh_007",
+    "owner": {
+      "name": "Ruth Akello",
+      "phone": "+256 779 916 567",
+      "email": "ruth.akello@example.com"
+    },
+    "type": "bachelor",
+    "size": 1,
+    "currency": "UGX",
+    "region": "Gulu",
+    "tier": "free",
+    "members": 1,
+    "zones": 4,
+    "mealsPlannedThisWeek": 4,
+    "lastActiveAt": "2026-10-20T09:00:00Z",
+    "createdAt": "2026-08-11T09:00:00Z"
+  },
+  {
+    "id": "hh_008",
+    "owner": {
+      "name": "Joseph Kato",
+      "phone": "+256 749 797 941",
+      "email": "joseph.kato@example.com"
+    },
+    "type": "family",
+    "size": 5,
+    "currency": "UGX",
+    "region": "Wakiso",
+    "tier": "free",
+    "members": 1,
+    "zones": 4,
+    "mealsPlannedThisWeek": 28,
+    "lastActiveAt": "2026-10-26T08:00:00Z",
+    "createdAt": "2026-10-19T09:00:00Z"
+  },
+  {
+    "id": "hh_009",
+    "owner": {
+      "name": "Agnes Nansubuga",
+      "phone": "+256 729 219 605",
+      "email": "agnes.nansubuga@example.com"
+    },
+    "type": "single_parent",
+    "size": 2,
+    "currency": "KES",
+    "region": "Nairobi",
+    "tier": "premium",
+    "members": 2,
+    "zones": 4,
+    "mealsPlannedThisWeek": 3,
+    "lastActiveAt": "2026-10-27T01:00:00Z",
+    "createdAt": "2026-09-11T09:00:00Z"
+  },
+  {
+    "id": "hh_010",
+    "owner": {
+      "name": "Moses Opio",
+      "phone": "+256 784 240 938",
+      "email": "moses.opio@example.com"
+    },
+    "type": "single_parent",
+    "size": 2,
+    "currency": "KES",
+    "region": "Nairobi",
+    "tier": "free",
+    "members": 1,
+    "zones": 4,
+    "mealsPlannedThisWeek": 27,
+    "lastActiveAt": "2026-10-20T03:00:00Z",
+    "createdAt": "2026-09-05T09:00:00Z"
+  },
+  {
+    "id": "hh_011",
+    "owner": {
+      "name": "Faith Kemigisha",
+      "phone": "+256 721 280 254",
+      "email": "faith.kemigisha@example.com"
+    },
+    "type": "bachelor",
+    "size": 1,
+    "currency": "UGX",
+    "region": "Mbarara",
+    "tier": "free",
+    "members": 1,
+    "zones": 4,
+    "mealsPlannedThisWeek": 14,
+    "lastActiveAt": "2026-10-22T08:00:00Z",
+    "createdAt": "2026-09-27T09:00:00Z"
+  },
+  {
+    "id": "hh_012",
+    "owner": {
+      "name": "Samuel Wasswa",
+      "phone": "+256 740 249 529",
+      "email": "samuel.wasswa@example.com"
+    },
+    "type": "couple",
+    "size": 2,
+    "currency": "UGX",
+    "region": "Entebbe",
+    "tier": "premium",
+    "members": 2,
+    "zones": 4,
+    "mealsPlannedThisWeek": 34,
+    "lastActiveAt": "2026-10-25T10:00:00Z",
+    "createdAt": "2026-09-23T09:00:00Z"
+  },
+  {
+    "id": "hh_013",
+    "owner": {
+      "name": "Mercy Achieng",
+      "phone": "+256 776 163 295",
+      "email": "mercy.achieng@example.com"
+    },
+    "type": "single_parent",
+    "size": 3,
+    "currency": "UGX",
+    "region": "Mbarara",
+    "tier": "free",
+    "members": 1,
+    "zones": 4,
+    "mealsPlannedThisWeek": 4,
+    "lastActiveAt": "2026-10-27T03:00:00Z",
+    "createdAt": "2026-10-13T09:00:00Z"
+  },
+  {
+    "id": "hh_014",
+    "owner": {
+      "name": "Ivan Tumusiime",
+      "phone": "+256 701 100 680",
+      "email": "ivan.tumusiime@example.com"
+    },
+    "type": "single_parent",
+    "size": 2,
+    "currency": "UGX",
+    "region": "Gulu",
+    "tier": "free",
+    "members": 1,
+    "zones": 4,
+    "mealsPlannedThisWeek": 9,
+    "lastActiveAt": "2026-10-23T15:00:00Z",
+    "createdAt": "2026-08-11T09:00:00Z"
+  },
+  {
+    "id": "hh_015",
+    "owner": {
+      "name": "Doreen Nalwoga",
+      "phone": "+256 739 485 252",
+      "email": "doreen.nalwoga@example.com"
+    },
+    "type": "family",
+    "size": 5,
+    "currency": "UGX",
+    "region": "Kampala",
+    "tier": "premium",
+    "members": 5,
+    "zones": 4,
+    "mealsPlannedThisWeek": 16,
+    "lastActiveAt": "2026-10-25T16:00:00Z",
+    "createdAt": "2026-10-17T09:00:00Z"
+  },
+  {
+    "id": "hh_016",
+    "owner": {
+      "name": "Kevin Ouma",
+      "phone": "+256 721 867 450",
+      "email": "kevin.ouma@example.com"
+    },
+    "type": "single_parent",
+    "size": 3,
+    "currency": "UGX",
+    "region": "Jinja",
+    "tier": "free",
+    "members": 1,
+    "zones": 4,
+    "mealsPlannedThisWeek": 16,
+    "lastActiveAt": "2026-10-24T06:00:00Z",
+    "createdAt": "2026-10-16T09:00:00Z"
+  }
+]
