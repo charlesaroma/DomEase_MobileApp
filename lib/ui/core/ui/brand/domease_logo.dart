@@ -43,6 +43,17 @@ enum LogoTone {
 /// Which lockup to draw.
 enum LogoLayout { stacked, stackedNoTagline, horizontal, horizontalNoTagline, mark, markIcon, wordmark }
 
+/// The artwork for a lockup (shared with the animated logo).
+BrandArt brandArtFor(LogoLayout layout) => switch (layout) {
+      LogoLayout.stacked => BrandPaths.stacked,
+      LogoLayout.stackedNoTagline => BrandPaths.stackedNoTagline,
+      LogoLayout.horizontal => BrandPaths.horizontal,
+      LogoLayout.horizontalNoTagline => BrandPaths.horizontalNoTagline,
+      LogoLayout.mark => BrandPaths.mark,
+      LogoLayout.markIcon => BrandPaths.markIcon,
+      LogoLayout.wordmark => BrandPaths.wordmark,
+    };
+
 /// The logo at a given width (or height); the other side follows the art.
 class DomEaseLogo extends StatelessWidget {
   const DomEaseLogo({
@@ -65,15 +76,7 @@ class DomEaseLogo extends StatelessWidget {
   /// (a ListView row, a stretched Column). The logo itself never stretches.
   final AlignmentGeometry alignment;
 
-  BrandArt get art => switch (layout) {
-        LogoLayout.stacked => BrandPaths.stacked,
-        LogoLayout.stackedNoTagline => BrandPaths.stackedNoTagline,
-        LogoLayout.horizontal => BrandPaths.horizontal,
-        LogoLayout.horizontalNoTagline => BrandPaths.horizontalNoTagline,
-        LogoLayout.mark => BrandPaths.mark,
-        LogoLayout.markIcon => BrandPaths.markIcon,
-        LogoLayout.wordmark => BrandPaths.wordmark,
-      };
+  BrandArt get art => brandArtFor(layout);
 
   @override
   Widget build(BuildContext context) {

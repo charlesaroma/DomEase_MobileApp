@@ -27,6 +27,14 @@ const DomEaseLogo(layout: LogoLayout.markIcon, width: 48);                      
 | `clay` | One colour on light grounds |
 | `white` | One colour on Clay 700 or photos |
 
+## Logo motion
+
+`ui/core/ui/brand/animated_logo.dart` draws the logo line by line from the same paths, with the website's story and timing (web repo, `docs/07-brand-motion.md`):
+
+- **Draw** (splash): the house goes up, the plant grows from the ground, the leaves open, the tulip blooms, then the name and tagline rise in. About 2.4 s at splash pace; the splash moves on once the drawing and the account lookup are both done.
+- **Loading** (`LogoLoader`): the mark draws at double speed, holds, fades, on a 2.6 s loop. Used by `AsyncView` and other waits; buttons keep their small spinner.
+- Reduced motion (the phone's setting) shows the finished logo with no movement.
+
 ## Colour
 
 | Family | Role | Tokens |

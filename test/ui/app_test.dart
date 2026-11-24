@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:domease/app.dart';
+import 'package:domease/ui/core/ui/brand/animated_logo.dart';
 import 'package:domease/ui/core/ui/brand/domease_logo.dart';
 
 import '../../testing/fakes.dart';
@@ -11,8 +12,9 @@ import '../../testing/fakes.dart';
 void main() {
   testWidgets('a fresh phone goes from the splash to Welcome', (tester) async {
     await tester.pumpWidget(demoScope(child: const DomEaseApp()));
-    expect(find.byType(DomEaseLogo), findsOneWidget);
-    await tester.pump(const Duration(seconds: 2));
+    expect(find.byType(AnimatedDomEaseLogo), findsOneWidget);
+    // The splash draws the logo (about 2.4 s), then moves on.
+    await tester.pump(const Duration(seconds: 3));
     await tester.pumpAndSettle();
     expect(find.text('Get started'), findsOneWidget);
     expect(find.text('I already have an account'), findsOneWidget);

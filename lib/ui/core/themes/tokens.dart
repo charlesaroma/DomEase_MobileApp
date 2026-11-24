@@ -85,7 +85,8 @@ abstract final class AppDurations {
   static const fast = Duration(milliseconds: 150);
   static const base = Duration(milliseconds: 250);
   static const slow = Duration(milliseconds: 400);
-  static const splash = Duration(milliseconds: 1600);
+  /// The longest the splash waits for its drawing (about 2.4 s at splash pace).
+  static const splash = Duration(milliseconds: 3200);
 }
 
 abstract final class AppCurves {

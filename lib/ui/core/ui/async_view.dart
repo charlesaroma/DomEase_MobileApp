@@ -6,6 +6,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import 'package:domease/ui/core/themes/tokens.dart';
 import 'package:domease/ui/core/themes/typography.dart';
+import 'package:domease/ui/core/ui/brand/animated_logo.dart';
 
 class AsyncView<T> extends StatelessWidget {
   const AsyncView({super.key, required this.value, required this.data, this.onRetry});
@@ -17,7 +18,7 @@ class AsyncView<T> extends StatelessWidget {
   @override
   Widget build(BuildContext context) => value.when(
         data: data,
-        loading: () => const Center(child: Padding(padding: EdgeInsets.all(AppSpace.huge), child: CircularProgressIndicator())),
+        loading: () => const Center(child: Padding(padding: EdgeInsets.all(AppSpace.huge), child: LogoLoader())),
         error: (e, _) => Center(
           child: Padding(
             padding: const EdgeInsets.all(AppSpace.xxl),

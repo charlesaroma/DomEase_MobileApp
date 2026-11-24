@@ -10,6 +10,7 @@ import 'package:domease/domain/models/household.dart';
 import 'package:domease/routing/routes.dart';
 import 'package:domease/ui/core/themes/tokens.dart';
 import 'package:domease/ui/core/themes/typography.dart';
+import 'package:domease/ui/core/ui/brand/animated_logo.dart';
 import 'package:domease/ui/core/ui/premium_lock.dart';
 import 'package:domease/ui/core/ui/readable_width.dart';
 import 'package:domease/ui/core/ui/section_label.dart';
@@ -23,7 +24,7 @@ class HouseholdScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final scheme = Theme.of(context).colorScheme;
     final h = ref.watch(householdProvider).value;
-    if (h == null) return const Scaffold(body: Center(child: CircularProgressIndicator()));
+    if (h == null) return const Scaffold(body: Center(child: LogoLoader()));
     final save = ref.read(householdProvider.notifier).save;
 
     return Scaffold(
