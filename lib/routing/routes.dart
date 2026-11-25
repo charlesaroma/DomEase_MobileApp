@@ -31,6 +31,8 @@ abstract final class Routes {
   // ── Inside a tab ──
   static const convert = '/today/convert';
   static const houseHelp = '/today/house-help';
+  static const housePay = '/today/house-help?tab=pay';
+  static const insights = '/today/insights';
   static const household = '/today/household';
   static String recipe(String id) => '/meals/recipe/$id';
 

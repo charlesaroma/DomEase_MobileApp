@@ -41,10 +41,13 @@ Zones are the household's own: `PUT /households/me/zones` saves added, renamed, 
 | POST | `/households/join` | `{ code }` in, Household out; adds the signed in person as a member. 404 for an unknown code | |
 | POST | `/subscriptions/checkout` | `{ plan: "monthly" \| "yearly" }`, returns the Household once paid | |
 | GET | `/recipes` | Published recipes only | `recipes.json` |
-| GET / PUT | `/households/me/meal-plan` | `{ breakfast: [recipeId × 7], lunch: […], … }` | |
+| GET / PUT | `/households/me/meal-plan` | `{ breakfast: [recipeId × 7], lunch: […], … }`. The reader also accepts the web's `{ seed, premium, days: { … } }` | |
 | POST | `/recipe-suggestions` | `{ name, ingredientsRaw, methodRaw, suggestedMealType? }` | |
 | GET / PUT | `/households/me/zones` | Zones with tasks and consumables | `zone_templates.json` |
 | GET / PUT | `/households/me/shopping` | `{ checked: [itemId], manual: [{ id, name, category, quantity, price }] }` | |
+| GET | `/households/me/meal-plan/history` | `[{ weekOf, days }]`, oldest first; the server keeps each replaced week (the last 12) for Eating trends | |
+| GET / PUT | `/households/me/budget` | `{ monthly, trips: [{ id, date, estimate, actual, items }] }`. Every home records trips from Done shopping; Insights is Premium | |
+| GET / PUT | `/households/me/staff` | `[{ id, name, role, salary, payday, startedOn, entries: [{ id, date, kind: pay \| advance \| deduction \| bonus \| leave, amount, days, note }] }]`. Premium. Still owed for a month = salary + bonuses - advances - deductions - pay (`domain/use_cases/insights.dart`) | |
 | GET | `/prices` | Market prices `{ name, pack, price, category }` | `prices.json` |
 | GET | `/currencies` | `{ base, updatedAt, rates: [{ code, name, perUsd }] }` | `currencies.json` |
 | GET | `/nudges` | Active nudges | `nudges.json` |

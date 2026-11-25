@@ -16,6 +16,7 @@ import 'package:domease/ui/core/ui/section_label.dart';
 import 'package:domease/ui/core/ui/status_pill.dart';
 import 'package:domease/ui/shop/view_models/shop_viewmodel.dart';
 import 'package:domease/ui/shop/widgets/add_item_sheet.dart';
+import 'package:domease/ui/shop/widgets/done_shopping_sheet.dart';
 import 'package:domease/utils/money.dart';
 
 class ShopScreen extends ConsumerWidget {
@@ -30,7 +31,10 @@ class ShopScreen extends ConsumerWidget {
         titleSpacing: AppSpace.screen,
         title: Text('Shop', style: AppText.title.copyWith(color: scheme.onSurface)),
         actions: [
-          TextButton(onPressed: () => ref.read(shopStateProvider.notifier).clearTicks(), child: const Text('New trip')),
+          TextButton(
+            onPressed: list.value?.any((i) => i.checked) ?? false ? () => showDoneShoppingSheet(context, list.value!) : null,
+            child: const Text('Done shopping'),
+          ),
           const SizedBox(width: AppSpace.sm),
         ],
       ),

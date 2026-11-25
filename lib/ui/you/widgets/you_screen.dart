@@ -91,6 +91,14 @@ class YouScreen extends ConsumerWidget {
                   subtitle: 'Who lives here, goals, meals and diet',
                   onTap: () => context.push(Routes.answers),
                 ),
+              if (home != null)
+                SettingsTile(
+                  icon: Icons.insights_outlined,
+                  title: 'Insights',
+                  subtitle: 'Food budget and eating trends',
+                  trailing: premium ? null : const PremiumBadge(small: true),
+                  onTap: () => context.push(Routes.insights),
+                ),
               SettingsTile(
                 icon: premium ? Icons.workspace_premium : Icons.workspace_premium_outlined,
                 title: premium ? 'Premium' : 'Free plan',

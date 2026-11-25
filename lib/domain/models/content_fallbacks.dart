@@ -47,6 +47,11 @@ const fallbackPremiumFeatures = [
     description: 'Vetting questionnaire and guides',
   ),
   PremiumFeatureInfo(
+    id: 'payroll',
+    title: 'House help pay',
+    description: 'Salary, advances and days off, with a payslip to send on WhatsApp',
+  ),
+  PremiumFeatureInfo(
     id: 'sharing',
     title: 'Household sharing',
     description: 'Everyone at home on one plan, one list',
@@ -79,14 +84,12 @@ const fallbackPremiumFeatures = [
   PremiumFeatureInfo(
     id: 'trends',
     title: 'Eating trends',
-    description: 'What your home eats most, week by week',
-    comingSoon: true,
+    description: 'What your home eats most, and how varied the week is',
   ),
   PremiumFeatureInfo(
     id: 'budget',
     title: 'Budget insights',
-    description: 'What the shopping costs, and where to save',
-    comingSoon: true,
+    description: 'A monthly food budget, and what each market trip really cost',
   ),
   PremiumFeatureInfo(
     id: 'autoPlan',

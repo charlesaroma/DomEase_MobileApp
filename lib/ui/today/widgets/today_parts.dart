@@ -15,6 +15,7 @@ import 'package:domease/ui/core/ui/premium_lock.dart';
 import 'package:domease/ui/core/ui/status_pill.dart';
 import 'package:domease/ui/core/view_models/content_viewmodel.dart';
 import 'package:domease/ui/core/view_models/household_viewmodel.dart';
+import 'package:domease/ui/house_help/view_models/payroll_viewmodel.dart';
 import 'package:domease/utils/money.dart';
 
 /// "Family · 4" (FR-TD-1); opens the household page.
@@ -170,6 +171,8 @@ class ToolsRow extends ConsumerWidget {
       Expanded(
         child: _Tool(icon: Icons.badge_outlined, label: 'House Help', locked: !premium, onTap: () => context.push(Routes.houseHelp)),
       ),
+      const SizedBox(width: AppSpace.md),
+      Expanded(child: _Tool(icon: Icons.insights_outlined, label: 'Insights', locked: !premium, onTap: () => context.push(Routes.insights))),
     ]);
   }
 }
@@ -202,6 +205,32 @@ class _Tool extends StatelessWidget {
   }
 }
 
+/// A payday in the next three days with pay still owed (Premium, House Help pay).
+class PaydayBanner extends ConsumerWidget {
+  const PaydayBanner({super.key});
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final due = ref.watch(paydaysDueProvider);
+    final currency = ref.watch(householdProvider).value?.currency ?? 'UGX';
+    return Column(children: [
+      for (final (s, days, owed) in due)
+        Card(
+          margin: const EdgeInsets.only(top: AppSpace.lg),
+          color: AppColors.amber200,
+          child: ListTile(
+            onTap: () => context.push(Routes.housePay),
+            leading: const Icon(Icons.event_outlined, color: AppColors.amber800),
+            title: Text("${s.name}'s payday is ${days == 0 ? 'today' : days == 1 ? 'tomorrow' : 'in $days days'}",
+                style: AppText.bodyStrong.copyWith(color: AppColors.amber800)),
+            subtitle: Text('${money(owed, currency)} still to pay this month.', style: AppText.label.copyWith(color: AppColors.ink)),
+            trailing: const Icon(Icons.chevron_right, color: AppColors.amber800),
+          ),
+        ),
+    ]);
+  }
+}
+
 /// What Premium adds, for the free plan only (FR-TD-7).
 class PremiumUpsell extends ConsumerWidget {
   const PremiumUpsell({super.key});
@@ -216,7 +245,7 @@ class PremiumUpsell extends ConsumerWidget {
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Text('Run it your way', style: AppText.heading.copyWith(color: AppColors.white)),
         const SizedBox(height: AppSpace.sm),
-        Text('House Help vetting, allergy profiles, occasion menus and no ads.', style: AppText.label.copyWith(color: AppColors.clay200)),
+        Text('A food budget, House Help pay and vetting, allergy profiles and no ads.', style: AppText.label.copyWith(color: AppColors.clay200)),
         const SizedBox(height: AppSpace.lg),
         FilledButton(
           style: FilledButton.styleFrom(backgroundColor: AppColors.amber, foregroundColor: AppColors.white, minimumSize: const Size(0, 44)),

@@ -20,6 +20,7 @@ import 'package:domease/ui/core/ui/app_shell.dart';
 import 'package:domease/ui/help/widgets/help_screen.dart';
 import 'package:domease/ui/house_help/widgets/house_help_screen.dart';
 import 'package:domease/ui/household/widgets/household_screen.dart';
+import 'package:domease/ui/insights/widgets/insights_screen.dart';
 import 'package:domease/ui/legal/widgets/legal_screen.dart';
 import 'package:domease/ui/meals/widgets/meals_screen.dart';
 import 'package:domease/ui/meals/widgets/recipe_screen.dart';
@@ -73,7 +74,11 @@ GoRouter buildRouter() => GoRouter(
                 builder: (context, state) => const TodayScreen(),
                 routes: [
                   GoRoute(path: 'convert', builder: (context, state) => const ConvertScreen()),
-                  GoRoute(path: 'house-help', builder: (context, state) => const HouseHelpScreen()),
+                  GoRoute(
+                    path: 'house-help',
+                    builder: (context, state) => HouseHelpScreen(initialTab: switch (state.uri.queryParameters['tab']) { 'pay' => 1, 'guides' => 2, _ => 0 }),
+                  ),
+                  GoRoute(path: 'insights', builder: (context, state) => const InsightsScreen()),
                   GoRoute(path: 'household', builder: (context, state) => const HouseholdScreen()),
                   GoRoute(
                     path: 'you',

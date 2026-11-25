@@ -19,6 +19,9 @@ import 'package:domease/data/repositories/house_help/house_help_repository_remot
 import 'package:domease/data/repositories/household/household_repository.dart';
 import 'package:domease/data/repositories/household/household_repository_local.dart';
 import 'package:domease/data/repositories/household/household_repository_remote.dart';
+import 'package:domease/data/repositories/insights/insights_repository.dart';
+import 'package:domease/data/repositories/insights/insights_repository_local.dart';
+import 'package:domease/data/repositories/insights/insights_repository_remote.dart';
 import 'package:domease/data/repositories/meals/meal_repository.dart';
 import 'package:domease/data/repositories/meals/meal_repository_local.dart';
 import 'package:domease/data/repositories/meals/meal_repository_remote.dart';
@@ -77,6 +80,9 @@ final zoneRepositoryProvider = Provider<ZoneRepository>(
 
 final shoppingRepositoryProvider = Provider<ShoppingRepository>((ref) =>
     _demo(ref) ? ShoppingRepositoryLocal(ref.watch(prefsStoreProvider)) : ShoppingRepositoryRemote(ref.watch(apiClientProvider)));
+
+final insightsRepositoryProvider = Provider<InsightsRepository>((ref) =>
+    _demo(ref) ? InsightsRepositoryLocal(ref.watch(prefsStoreProvider)) : InsightsRepositoryRemote(ref.watch(apiClientProvider)));
 
 /// On the phone in every flavor (appearance and reminders are per device).
 final preferencesRepositoryProvider = Provider<PreferencesRepository>((ref) => PreferencesRepository(ref.watch(prefsStoreProvider)));

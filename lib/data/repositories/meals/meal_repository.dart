@@ -12,6 +12,9 @@ abstract interface class MealRepository {
 
   Future<void> savePlan(MealPlan plan);
 
+  /// Past weeks, oldest first, for Eating trends. The server keeps the last 12.
+  Future<List<MealPlan>> history();
+
   /// Sent for review; it appears nowhere until a moderator approves it (FR-MP-13).
   Future<void> suggest(RecipeSuggestion suggestion);
 }

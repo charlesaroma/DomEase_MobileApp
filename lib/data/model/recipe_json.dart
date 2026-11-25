@@ -52,9 +52,13 @@ Json suggestionToJson(RecipeSuggestion s) => {
       if (s.mealType != null) 'suggestedMealType': s.mealType!.name,
     };
 
-MealPlan mealPlanFromJson(Json j) => MealPlan({
-      for (final t in MealType.values)
-        if (j[t.name] != null) t: strings(j[t.name]),
-    });
+/// Reads `{ breakfast: [...], ... }` or the contract's `{ seed, days: { breakfast: [...] } }`.
+MealPlan mealPlanFromJson(Json j) {
+  final days = j['days'] is Map ? (j['days'] as Map).cast<String, dynamic>() : j;
+  return MealPlan({
+    for (final t in MealType.values)
+      if (days[t.name] != null) t: strings(days[t.name]),
+  });
+}
 
 Json mealPlanToJson(MealPlan p) => {for (final e in p.days.entries) e.key.name: e.value};

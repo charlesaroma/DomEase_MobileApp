@@ -9,11 +9,20 @@
     "comingSoon": false
   },
   {
+    "id": "payroll",
+    "title": "House help pay",
+    "description": "Salary, advances and days off, with a payslip to send on WhatsApp",
+    "icon": "wallet",
+    "sortOrder": 2,
+    "shown": true,
+    "comingSoon": false
+  },
+  {
     "id": "sharing",
     "title": "Household sharing",
     "description": "Everyone at home on one plan, one list",
     "icon": "users",
-    "sortOrder": 2,
+    "sortOrder": 3,
     "shown": true,
     "comingSoon": false
   },
@@ -22,7 +31,7 @@
     "title": "Allergy profiles",
     "description": "For each person, with warnings on recipes",
     "icon": "shield",
-    "sortOrder": 3,
+    "sortOrder": 4,
     "shown": true,
     "comingSoon": false
   },
@@ -31,7 +40,7 @@
     "title": "Occasion menus",
     "description": "Birthday, Christmas, Easter and Eid",
     "icon": "party",
-    "sortOrder": 4,
+    "sortOrder": 5,
     "shown": true,
     "comingSoon": false
   },
@@ -40,7 +49,7 @@
     "title": "Healthier pastry swaps",
     "description": "Lighter versions of the pastries you love",
     "icon": "leaf",
-    "sortOrder": 5,
+    "sortOrder": 6,
     "shown": true,
     "comingSoon": false
   },
@@ -49,7 +58,7 @@
     "title": "Diabetic and PCOS ideas",
     "description": "Meal ideas with the dietary disclaimer",
     "icon": "heart",
-    "sortOrder": 6,
+    "sortOrder": 7,
     "shown": true,
     "comingSoon": false
   },
@@ -58,34 +67,34 @@
     "title": "Favourite meals",
     "description": "Keep the dishes your home asks for",
     "icon": "star",
-    "sortOrder": 7,
+    "sortOrder": 8,
     "shown": true,
     "comingSoon": false
   },
   {
     "id": "trends",
     "title": "Eating trends",
-    "description": "What your home eats most, week by week",
+    "description": "What your home eats most, and how varied the week is",
     "icon": "chart",
-    "sortOrder": 8,
+    "sortOrder": 9,
     "shown": true,
-    "comingSoon": true
+    "comingSoon": false
   },
   {
     "id": "budget",
     "title": "Budget insights",
-    "description": "What the shopping costs, and where to save",
+    "description": "A monthly food budget, and what each market trip really cost",
     "icon": "wallet",
-    "sortOrder": 9,
+    "sortOrder": 10,
     "shown": true,
-    "comingSoon": true
+    "comingSoon": false
   },
   {
     "id": "autoPlan",
     "title": "Automatic weekly planning",
     "description": "Next week planned every Sunday",
     "icon": "calendar",
-    "sortOrder": 10,
+    "sortOrder": 11,
     "shown": true,
     "comingSoon": true
   },
@@ -94,7 +103,7 @@
     "title": "No ads",
     "description": "Every screen, ad free",
     "icon": "ban",
-    "sortOrder": 11,
+    "sortOrder": 12,
     "shown": true,
     "comingSoon": false
   }

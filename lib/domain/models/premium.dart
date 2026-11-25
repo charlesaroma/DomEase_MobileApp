@@ -3,6 +3,7 @@
 /// Every feature behind Premium (FR-MZ-2), with the line used to sell it.
 enum PremiumFeature {
   houseHelp('House Help: vetting questionnaire and guides'),
+  payroll('House help pay: salary, advances and payslips'),
   sharing('Household sharing for everyone at home'),
   allergies('Allergy profiles for each person'),
   occasions('Birthday, Christmas, Easter and Eid menus'),

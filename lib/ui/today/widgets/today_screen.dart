@@ -54,6 +54,7 @@ class TodayScreen extends ConsumerWidget {
             Text('Today', style: AppText.display.copyWith(color: scheme.onSurface)),
             Text(longDate(DateTime.now()), style: Theme.of(context).textTheme.bodySmall),
             const NudgeBanner(),
+            const PaydayBanner(),
             AsyncView(
               value: today,
               onRetry: () => ref.invalidate(todayProvider),

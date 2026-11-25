@@ -28,5 +28,8 @@ class MealRepositoryRemote implements MealRepository {
   Future<void> savePlan(MealPlan plan) => _api.put('/households/me/meal-plan', mealPlanToJson(plan));
 
   @override
+  Future<List<MealPlan>> history() async => [for (final j in await _api.get('/households/me/meal-plan/history') as List) mealPlanFromJson(j as Json)];
+
+  @override
   Future<void> suggest(RecipeSuggestion suggestion) => _api.post('/recipe-suggestions', suggestionToJson(suggestion));
 }
